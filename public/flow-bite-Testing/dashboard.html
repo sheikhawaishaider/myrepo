@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link href="/public/css/style.css" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-gray-600">
+    <!-- title -->
+    <div class="heading flex justify-center items-center gap-2 mt-1.5">
+        <div class=" flex items-center justify-center guitar-icon w-10 h-10 rounded-3xl bg-white">
+            <img class="w-7 h-7" src="/public/flowbite images/6.png" alt="guitar">
+        </div>
+        <h1 class="font-popi text-3xl text-gray-900">Well Come To</h1>
+        <h1 class="font-popi text-3xl text-white -rotate-3">Our Guitar</h1>
+        <div class=" flex items-center justify-center guitar-icon w-10 h-10 rounded-3xl bg-white">
+            <img class="w-7 h-7" src="/public/flowbite images/6.png" alt="guitar">
+        </div>
+    </div>
+    <!-- slider -->
+    <div id="default-carousel" class="relative pl-2 pr-2" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mt-5 bg-gray-900">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/public/flowbite images/1.jpg"
+                    class="absolute block min-w-fit h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/public/flowbite images/2.jpg"
+                    class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/public/flowbite images/3.jpg"
+                    class="absolute block min-w-fit h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/public/flowbite images/4.jpg"
+                    class="absolute block w-fit  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/public/flowbite images/5.jpg"
+                    class="absolute block min-w-fit h-96  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    <!-- title-2 -->
+    <div class="title-2 ml-2 bg-gray-500 w-72 mt-2 rounded-br-3xl rounded-tr-3xl">
+        <h1 class="font-popi text-3xl text-gray-900">Sales at our Store</h1>
+    </div>
+    <!-- Sales Details -->
+    <div class="progress flex items-center flex-col">
+        <div class="Sales   w-4/5 bg-gray-900  mt-2 mb-2 shadow-lg rounded-3xl pb-6 pr-2 pl-2">
+            <div class="mb-1 pl-3 text-base font-medium text-blue-700 dark:text-blue-500">Classical Guitar</div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-800">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 15%"></div>
+            </div>
+            <div class="mb-1 pl-3 text-base font-medium text-red-700 dark:text-red-500">Acoustic Guitar</div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-red-600 h-2.5 rounded-full dark:bg-red-600" style="width: 85%"></div>
+            </div>
+            <div class="mb-1 pl-3 text-base font-medium text-yellow-700 dark:text-yellow-500">Electric Guitar</div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+            <div class="mb-1 pl-3 text-base font-medium text-indigo-700 dark:text-indigo-500">Bass Guitar</div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-indigo-600 h-2.5 rounded-full dark:bg-indigo-500" style="width: 25%"></div>
+            </div>
+            <div class="mb-1 pl-3 text-base font-medium text-purple-700 dark:text-purple-500">Purple</div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="bg-purple-600 h-2.5 rounded-full dark:bg-purple-500" style="width: 45%"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Video -->
+    <h1 class="text-gray-900 pl-1">This Video will Provide you with the info aswell</h1>
+    <video class="w-96 mb-2 ml-2 rounded-br-3xl rounded-tr-3xl" controls>
+        <source src="/public/flowbite images/7.jpeg" type="jpeg">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Details -->
+
+    <ol class="items-center sm:flex">
+        <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+                <div
+                    class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pr-8">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Best acoustic guitars 2023</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">By Chris
+                    Bird_Contributions from Matt McCracken, James Farmer, Daryl Robertson last updated January 30,
+                    2023</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Unlike pretty much any other
+                    instrument you’ll play, the best acoustic guitars offer one of the most tactile and tangible
+                    experiences for a musician. Acoustic guitars are living, breathing things. They resonate with you,
+                    adapting to your input from the gentlest fingerpicking to the harshest strumming. They even grow old
+                    with you, maturing the longer you play them, changing in tone just as you’ll change as the years go
+                    by.</p>
+            </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+                <div
+                    class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pr-8">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">10 epic budget electrics</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">By Chris
+                    Corfield_Contributions from James Farmer, Daryl Robertson last updated February 03, 2023</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">The budget guitar category has to be
+                    the most fiercely competitive, with more options than ever before vying for your hard-earned cash.
+                    Nowadays, as this guide to the best cheap electric guitars proves, you don't need to spend a fortune
+                    to get a great instrument. We have high-quality options in every style imaginable, from Yamaha,
+                    Epiphone, Squier, Gretsch, Ibanez and more. So, whether you're looking for a budget-friendly
+                    Stratocaster, an inexpensive hollowbody, or an affordable shred guitar, you'll find it here.</p>
+            </div>
+        </li>
+        <li class="relative mb-6 sm:mb-0">
+            <div class="flex items-center">
+                <div
+                    class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+            </div>
+            <div class="mt-3 sm:pr-8">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on
+                    January 5, 2022</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                    components and interactive elements.</p>
+            </div>
+        </li>
+    </ol>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+
+    <link href="/public/css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="md:bg-gray-300 pt-5">
+    <div class="container bg-gray-200 pb-10 w-full pt-3">
+        <!-- Portion-1 MONDAY -->
+        <div class="Portion-1 bg-white w-full">
+            <div class="day flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full">
+                <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Monday</span>
+                <span class="">
+                    <button type="button"
+                        class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:font-medium rounded-lg md:text-base text-sm md:px-4 px-3 md:py-1"><a
+                            class="text-lg">+</a> Add New</button>
+                </span>
+            </div>
+
+                <!-- TABLE num-1 -->
+            <div class="relative overflow-x-auto shadow-md">
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <!-- TABLE 1 headings -->
+                        <tr>
+                            <th scope="col" class="pl-2 pr-6 py-3">
+                                OPEN
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                CLOSE
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                DURATION
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                MODES
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                LOCATION
+                            </th>
+                            <th scope="col" class="pl-36 py-3">
+                                PUBLIC
+                            </th>
+                            <th scope="col" class="pl-4 py-3">
+                                REMOVE
+                            </th>
+                            <th scope="col" class="bg-50-gray pr-6 py-3">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table 1 Row 1 -->
+                        <tr class="border-b">
+                            <td scope="row" class="pl-2 pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap ">
+                                08:00 AM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                01:00 PM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                30 Min
+                            </td>
+                            <td class="flex gap-2 pr-6 py-4">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.2533 13.9178L14.7591 13.7472C14.4003 13.706 14.0474 13.8296 13.7944 14.0825L12.7121 15.1649C11.0474 14.3178 9.68266 12.959 8.83561 11.2884L9.92384 10.2001C10.1768 9.94721 10.3003 9.59427 10.2591 9.23544L10.0885 7.75309C10.018 7.15897 9.51796 6.71191 8.91796 6.71191H7.90031C7.23561 6.71191 6.68266 7.26486 6.72384 7.92956C7.03561 12.9531 11.0533 16.9649 16.0709 17.2766C16.7356 17.3178 17.2885 16.7649 17.2885 16.1001V15.0825C17.2944 14.4884 16.8474 13.9884 16.2533 13.9178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M14.9413 11.1178V8.4707H6.70605V15.5295H14.9413V12.8825L17.2943 15.2354V8.76482L14.9413 11.1178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.4484 16.6586C17.1084 16.6586 17.6484 16.1186 17.6484 15.4586V8.25859C17.6484 7.59859 17.1084 7.05859 16.4484 7.05859H6.84844C6.18844 7.05859 5.65444 7.59859 5.65444 8.25859L5.64844 19.0586L8.04844 16.6586H16.4484ZM6.84844 16.1606V8.25859H16.4484V15.4586H7.55044L6.84844 16.1606ZM8.04844 13.0586H12.8484V14.2586H8.04844V13.0586ZM8.04844 11.2586H15.2484V12.4586H8.04844V11.2586ZM8.04844 9.45859H15.2484V10.6586H8.04844V9.45859Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M17.8824 8.5295C17.8824 7.88244 17.353 7.35303 16.7059 7.35303H7.29415C6.64709 7.35303 6.11768 7.88244 6.11768 8.5295V15.5883C6.11768 16.2354 6.64709 16.7648 7.29415 16.7648H16.7059C17.353 16.7648 17.8824 16.2354 17.8824 15.5883V8.5295ZM16.7059 8.5295L12 11.4707L7.29415 8.5295H16.7059ZM16.7059 15.5883H7.29415V9.70597L12 12.6471L16.7059 9.70597V15.5883Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                Islamabad Office
+                            </td>
+                            <td class="pl-36 py-4">
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="pl-8 py-4">
+                                <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_181470_156315)">
+                                        <path
+                                            d="M6.42857 17.7557C6.42857 18.1463 6.10714 18.4659 5.71429 18.4659C5.32143 18.4659 5 18.1463 5 17.7557V7.8125C5 7.42187 5.32143 7.10227 5.71429 7.10227C6.10714 7.10227 6.42857 7.42187 6.42857 7.8125V17.7557ZM10.7143 17.7557C10.7143 18.1463 10.3929 18.4659 10 18.4659C9.60714 18.4659 9.28571 18.1463 9.28571 17.7557V7.8125C9.28571 7.42187 9.60714 7.10227 10 7.10227C10.3929 7.10227 10.7143 7.42187 10.7143 7.8125V17.7557ZM15 17.7557C15 18.1463 14.6786 18.4659 14.2857 18.4659C13.8929 18.4659 13.5714 18.1463 13.5714 17.7557V7.8125C13.5714 7.42187 13.8929 7.10227 14.2857 7.10227C14.6786 7.10227 15 7.42187 15 7.8125V17.7557ZM13.8438 1.00142L15.0402 2.84091H19.2857C19.6786 2.84091 20 3.15874 20 3.55114C20 3.94354 19.6786 4.26136 19.2857 4.26136H18.5714V19.1761C18.5714 21.1381 16.9732 22.7273 15 22.7273H5C3.02768 22.7273 1.42857 21.1381 1.42857 19.1761V4.26136H0.714286C0.319821 4.26136 0 3.94354 0 3.55114C0 3.15874 0.319821 2.84091 0.714286 2.84091H4.95982L6.11607 1.00142C6.50893 0.378462 7.19643 0 7.93304 0H12.067C12.8036 0 13.4911 0.378462 13.8438 1.00142ZM6.64732 2.84091H13.3527L12.6696 1.75426C12.5402 1.54652 12.3125 1.42045 12.067 1.42045H7.93304C7.6875 1.42045 7.45982 1.54652 7.33036 1.75426L6.64732 2.84091ZM2.85714 19.1761C2.85714 20.3524 3.81652 21.3068 5 21.3068H15C16.183 21.3068 17.1429 20.3524 17.1429 19.1761V4.26136H2.85714V19.1761Z"
+                                            fill="#FF5252" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181470_156315">
+                                            <rect width="20" height="22.7273" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </td>
+                            <td class="pr-3 pl-10 py-4">
+                                <div class="button h-8 w-full flex gap-2 items-center justify-center rounded-lg bg-violet-100 p-2">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_181470_156328)">
+                                        <path d="M13.5949 0.795767C14.4738 -0.0829639 15.9012 -0.0829639 16.7801 0.795767L17.2055 1.22151C18.0844 2.10042 18.0844 3.52635 17.2055 4.40526L9.45703 12.1502C9.16172 12.449 8.78555 12.6248 8.37422 12.7514L5.18906 13.4861C4.99922 13.5283 4.80234 13.4721 4.66523 13.3349C4.52812 13.1978 4.47187 13.001 4.51406 12.8111L5.24883 9.62596C5.34375 9.21463 5.55117 8.83846 5.85 8.51151L13.5949 0.795767ZM15.982 1.59135C15.5426 1.1519 14.8324 1.1519 14.393 1.59135L13.4508 2.53143L15.4688 4.5494L16.4074 3.60721C16.8469 3.16881 16.8469 2.45655 16.4074 2.01709L15.982 1.59135ZM6.3457 9.87909L5.81133 12.1889L8.08945 11.6545C8.325 11.6088 8.51484 11.5033 8.6625 11.324L14.6742 5.34393L12.6562 3.32702L6.64453 9.33768C6.49687 9.48534 6.39141 9.67518 6.3457 9.87909ZM7.3125 2.25018C7.62187 2.25018 7.875 2.5019 7.875 2.81268C7.875 3.12346 7.62187 3.37518 7.3125 3.37518H2.8125C1.88051 3.37518 1.125 4.13104 1.125 5.06268V15.1877C1.125 16.1193 1.88051 16.8752 2.8125 16.8752H12.9375C13.8691 16.8752 14.625 16.1193 14.625 15.1877V10.6877C14.625 10.3783 14.8781 10.1252 15.1875 10.1252C15.4969 10.1252 15.75 10.3783 15.75 10.6877V15.1877C15.75 16.7416 14.4914 18.0002 12.9375 18.0002H2.8125C1.2593 18.0002 0 16.7416 0 15.1877V5.06268C0 3.50948 1.2593 2.25018 2.8125 2.25018H7.3125Z" fill="#673AB7"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_181470_156328">
+                                        <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    </span>
+                                    <span>Edit</span>
+                                </div>
+                            </td>
+                            <!-- Table 1 Row-2 -->
+                        </tr>
+                        <!-- Table 1 Row 2 -->
+                        <tr class="border-b">
+                            <td scope="row" class="pl-2 pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap">
+                                09:00 PM
+                            </td>
+                            <td class="pr-6 py-4 w-auto text-black md:text-sm text-xs whitespace-nowrap">
+                                01:00 PM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                01 Hour
+                            </td>
+                            <td class="flex gap-2 pr-6 py-4">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.2533 13.9178L14.7591 13.7472C14.4003 13.706 14.0474 13.8296 13.7944 14.0825L12.7121 15.1649C11.0474 14.3178 9.68266 12.959 8.83561 11.2884L9.92384 10.2001C10.1768 9.94721 10.3003 9.59427 10.2591 9.23544L10.0885 7.75309C10.018 7.15897 9.51796 6.71191 8.91796 6.71191H7.90031C7.23561 6.71191 6.68266 7.26486 6.72384 7.92956C7.03561 12.9531 11.0533 16.9649 16.0709 17.2766C16.7356 17.3178 17.2885 16.7649 17.2885 16.1001V15.0825C17.2944 14.4884 16.8474 13.9884 16.2533 13.9178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.4484 16.6586C17.1084 16.6586 17.6484 16.1186 17.6484 15.4586V8.25859C17.6484 7.59859 17.1084 7.05859 16.4484 7.05859H6.84844C6.18844 7.05859 5.65444 7.59859 5.65444 8.25859L5.64844 19.0586L8.04844 16.6586H16.4484ZM6.84844 16.1606V8.25859H16.4484V15.4586H7.55044L6.84844 16.1606ZM8.04844 13.0586H12.8484V14.2586H8.04844V13.0586ZM8.04844 11.2586H15.2484V12.4586H8.04844V11.2586ZM8.04844 9.45859H15.2484V10.6586H8.04844V9.45859Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M17.8824 8.5295C17.8824 7.88244 17.353 7.35303 16.7059 7.35303H7.29415C6.64709 7.35303 6.11768 7.88244 6.11768 8.5295V15.5883C6.11768 16.2354 6.64709 16.7648 7.29415 16.7648H16.7059C17.353 16.7648 17.8824 16.2354 17.8824 15.5883V8.5295ZM16.7059 8.5295L12 11.4707L7.29415 8.5295H16.7059ZM16.7059 15.5883H7.29415V9.70597L12 12.6471L16.7059 9.70597V15.5883Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap">
+                                Islamabad Office
+                            </td>
+                            <td class="pl-36 py-4">
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="pl-8 py-4">
+                                <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_181470_156315)">
+                                        <path
+                                            d="M6.42857 17.7557C6.42857 18.1463 6.10714 18.4659 5.71429 18.4659C5.32143 18.4659 5 18.1463 5 17.7557V7.8125C5 7.42187 5.32143 7.10227 5.71429 7.10227C6.10714 7.10227 6.42857 7.42187 6.42857 7.8125V17.7557ZM10.7143 17.7557C10.7143 18.1463 10.3929 18.4659 10 18.4659C9.60714 18.4659 9.28571 18.1463 9.28571 17.7557V7.8125C9.28571 7.42187 9.60714 7.10227 10 7.10227C10.3929 7.10227 10.7143 7.42187 10.7143 7.8125V17.7557ZM15 17.7557C15 18.1463 14.6786 18.4659 14.2857 18.4659C13.8929 18.4659 13.5714 18.1463 13.5714 17.7557V7.8125C13.5714 7.42187 13.8929 7.10227 14.2857 7.10227C14.6786 7.10227 15 7.42187 15 7.8125V17.7557ZM13.8438 1.00142L15.0402 2.84091H19.2857C19.6786 2.84091 20 3.15874 20 3.55114C20 3.94354 19.6786 4.26136 19.2857 4.26136H18.5714V19.1761C18.5714 21.1381 16.9732 22.7273 15 22.7273H5C3.02768 22.7273 1.42857 21.1381 1.42857 19.1761V4.26136H0.714286C0.319821 4.26136 0 3.94354 0 3.55114C0 3.15874 0.319821 2.84091 0.714286 2.84091H4.95982L6.11607 1.00142C6.50893 0.378462 7.19643 0 7.93304 0H12.067C12.8036 0 13.4911 0.378462 13.8438 1.00142ZM6.64732 2.84091H13.3527L12.6696 1.75426C12.5402 1.54652 12.3125 1.42045 12.067 1.42045H7.93304C7.6875 1.42045 7.45982 1.54652 7.33036 1.75426L6.64732 2.84091ZM2.85714 19.1761C2.85714 20.3524 3.81652 21.3068 5 21.3068H15C16.183 21.3068 17.1429 20.3524 17.1429 19.1761V4.26136H2.85714V19.1761Z"
+                                            fill="#FF5252" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181470_156315">
+                                            <rect width="20" height="22.7273" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </td>
+                            <td class="pr-3 pl-10 py-4">
+                                <div class="button h-8 w-full flex gap-2 items-center justify-center rounded-lg bg-violet-100 p-2">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_181470_156328)">
+                                        <path d="M13.5949 0.795767C14.4738 -0.0829639 15.9012 -0.0829639 16.7801 0.795767L17.2055 1.22151C18.0844 2.10042 18.0844 3.52635 17.2055 4.40526L9.45703 12.1502C9.16172 12.449 8.78555 12.6248 8.37422 12.7514L5.18906 13.4861C4.99922 13.5283 4.80234 13.4721 4.66523 13.3349C4.52812 13.1978 4.47187 13.001 4.51406 12.8111L5.24883 9.62596C5.34375 9.21463 5.55117 8.83846 5.85 8.51151L13.5949 0.795767ZM15.982 1.59135C15.5426 1.1519 14.8324 1.1519 14.393 1.59135L13.4508 2.53143L15.4688 4.5494L16.4074 3.60721C16.8469 3.16881 16.8469 2.45655 16.4074 2.01709L15.982 1.59135ZM6.3457 9.87909L5.81133 12.1889L8.08945 11.6545C8.325 11.6088 8.51484 11.5033 8.6625 11.324L14.6742 5.34393L12.6562 3.32702L6.64453 9.33768C6.49687 9.48534 6.39141 9.67518 6.3457 9.87909ZM7.3125 2.25018C7.62187 2.25018 7.875 2.5019 7.875 2.81268C7.875 3.12346 7.62187 3.37518 7.3125 3.37518H2.8125C1.88051 3.37518 1.125 4.13104 1.125 5.06268V15.1877C1.125 16.1193 1.88051 16.8752 2.8125 16.8752H12.9375C13.8691 16.8752 14.625 16.1193 14.625 15.1877V10.6877C14.625 10.3783 14.8781 10.1252 15.1875 10.1252C15.4969 10.1252 15.75 10.3783 15.75 10.6877V15.1877C15.75 16.7416 14.4914 18.0002 12.9375 18.0002H2.8125C1.2593 18.0002 0 16.7416 0 15.1877V5.06268C0 3.50948 1.2593 2.25018 2.8125 2.25018H7.3125Z" fill="#673AB7"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_181470_156328">
+                                        <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    </span>
+                                    <span>Edit</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Portion-2 TUESDAY -->
+        <div class="Portion-2 bg-white w-full mt-3">
+            <div class="day flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full">
+                <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Tuesday</span>
+                <span class="">
+                    <button type="button"
+                        class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 md:font-medium rounded-lg md:text-base text-sm md:px-4 px-3 md:py-1"><a
+                            class="text-lg">+</a> Add New</button>
+                </span>
+            </div>
+             <!-- TABLE num-2 -->
+            <div class="relative overflow-x-auto shadow-md">
+                <table class="w-full text-left text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <!-- TABLE 1 headings -->
+                        <tr>
+                            <th scope="col" class="pl-2 pr-6 py-3">
+                                OPEN
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                CLOSE
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                DURATION
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                MODES
+                            </th>
+                            <th scope="col" class="pr-6 py-3">
+                                LOCATION
+                            </th>
+                            <th scope="col" class="pl-36 py-3">
+                                PUBLIC
+                            </th>
+                            <th scope="col" class="pl-4 py-3">
+                                REMOVE
+                            </th>
+                            <th scope="col" class="bg-50-gray pr-6 py-3">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table 1 Row 1 -->
+                        <tr class="border-b">
+                            <td scope="row" class="pl-2 pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap ">
+                                08:00 AM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                01:00 PM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                30 Min
+                            </td>
+                            <td class="flex gap-2 pr-6 py-4">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.2533 13.9178L14.7591 13.7472C14.4003 13.706 14.0474 13.8296 13.7944 14.0825L12.7121 15.1649C11.0474 14.3178 9.68266 12.959 8.83561 11.2884L9.92384 10.2001C10.1768 9.94721 10.3003 9.59427 10.2591 9.23544L10.0885 7.75309C10.018 7.15897 9.51796 6.71191 8.91796 6.71191H7.90031C7.23561 6.71191 6.68266 7.26486 6.72384 7.92956C7.03561 12.9531 11.0533 16.9649 16.0709 17.2766C16.7356 17.3178 17.2885 16.7649 17.2885 16.1001V15.0825C17.2944 14.4884 16.8474 13.9884 16.2533 13.9178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M14.9413 11.1178V8.4707H6.70605V15.5295H14.9413V12.8825L17.2943 15.2354V8.76482L14.9413 11.1178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.4484 16.6586C17.1084 16.6586 17.6484 16.1186 17.6484 15.4586V8.25859C17.6484 7.59859 17.1084 7.05859 16.4484 7.05859H6.84844C6.18844 7.05859 5.65444 7.59859 5.65444 8.25859L5.64844 19.0586L8.04844 16.6586H16.4484ZM6.84844 16.1606V8.25859H16.4484V15.4586H7.55044L6.84844 16.1606ZM8.04844 13.0586H12.8484V14.2586H8.04844V13.0586ZM8.04844 11.2586H15.2484V12.4586H8.04844V11.2586ZM8.04844 9.45859H15.2484V10.6586H8.04844V9.45859Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M17.8824 8.5295C17.8824 7.88244 17.353 7.35303 16.7059 7.35303H7.29415C6.64709 7.35303 6.11768 7.88244 6.11768 8.5295V15.5883C6.11768 16.2354 6.64709 16.7648 7.29415 16.7648H16.7059C17.353 16.7648 17.8824 16.2354 17.8824 15.5883V8.5295ZM16.7059 8.5295L12 11.4707L7.29415 8.5295H16.7059ZM16.7059 15.5883H7.29415V9.70597L12 12.6471L16.7059 9.70597V15.5883Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                Islamabad Office
+                            </td>
+                            <td class="pl-36 py-4">
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="pl-8 py-4">
+                                <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_181470_156315)">
+                                        <path
+                                            d="M6.42857 17.7557C6.42857 18.1463 6.10714 18.4659 5.71429 18.4659C5.32143 18.4659 5 18.1463 5 17.7557V7.8125C5 7.42187 5.32143 7.10227 5.71429 7.10227C6.10714 7.10227 6.42857 7.42187 6.42857 7.8125V17.7557ZM10.7143 17.7557C10.7143 18.1463 10.3929 18.4659 10 18.4659C9.60714 18.4659 9.28571 18.1463 9.28571 17.7557V7.8125C9.28571 7.42187 9.60714 7.10227 10 7.10227C10.3929 7.10227 10.7143 7.42187 10.7143 7.8125V17.7557ZM15 17.7557C15 18.1463 14.6786 18.4659 14.2857 18.4659C13.8929 18.4659 13.5714 18.1463 13.5714 17.7557V7.8125C13.5714 7.42187 13.8929 7.10227 14.2857 7.10227C14.6786 7.10227 15 7.42187 15 7.8125V17.7557ZM13.8438 1.00142L15.0402 2.84091H19.2857C19.6786 2.84091 20 3.15874 20 3.55114C20 3.94354 19.6786 4.26136 19.2857 4.26136H18.5714V19.1761C18.5714 21.1381 16.9732 22.7273 15 22.7273H5C3.02768 22.7273 1.42857 21.1381 1.42857 19.1761V4.26136H0.714286C0.319821 4.26136 0 3.94354 0 3.55114C0 3.15874 0.319821 2.84091 0.714286 2.84091H4.95982L6.11607 1.00142C6.50893 0.378462 7.19643 0 7.93304 0H12.067C12.8036 0 13.4911 0.378462 13.8438 1.00142ZM6.64732 2.84091H13.3527L12.6696 1.75426C12.5402 1.54652 12.3125 1.42045 12.067 1.42045H7.93304C7.6875 1.42045 7.45982 1.54652 7.33036 1.75426L6.64732 2.84091ZM2.85714 19.1761C2.85714 20.3524 3.81652 21.3068 5 21.3068H15C16.183 21.3068 17.1429 20.3524 17.1429 19.1761V4.26136H2.85714V19.1761Z"
+                                            fill="#FF5252" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181470_156315">
+                                            <rect width="20" height="22.7273" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </td>
+                            <td class="pr-3 pl-10 py-4">
+                                <div class="button h-8 w-full flex gap-2 items-center justify-center rounded-lg bg-violet-100 p-2">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_181470_156328)">
+                                        <path d="M13.5949 0.795767C14.4738 -0.0829639 15.9012 -0.0829639 16.7801 0.795767L17.2055 1.22151C18.0844 2.10042 18.0844 3.52635 17.2055 4.40526L9.45703 12.1502C9.16172 12.449 8.78555 12.6248 8.37422 12.7514L5.18906 13.4861C4.99922 13.5283 4.80234 13.4721 4.66523 13.3349C4.52812 13.1978 4.47187 13.001 4.51406 12.8111L5.24883 9.62596C5.34375 9.21463 5.55117 8.83846 5.85 8.51151L13.5949 0.795767ZM15.982 1.59135C15.5426 1.1519 14.8324 1.1519 14.393 1.59135L13.4508 2.53143L15.4688 4.5494L16.4074 3.60721C16.8469 3.16881 16.8469 2.45655 16.4074 2.01709L15.982 1.59135ZM6.3457 9.87909L5.81133 12.1889L8.08945 11.6545C8.325 11.6088 8.51484 11.5033 8.6625 11.324L14.6742 5.34393L12.6562 3.32702L6.64453 9.33768C6.49687 9.48534 6.39141 9.67518 6.3457 9.87909ZM7.3125 2.25018C7.62187 2.25018 7.875 2.5019 7.875 2.81268C7.875 3.12346 7.62187 3.37518 7.3125 3.37518H2.8125C1.88051 3.37518 1.125 4.13104 1.125 5.06268V15.1877C1.125 16.1193 1.88051 16.8752 2.8125 16.8752H12.9375C13.8691 16.8752 14.625 16.1193 14.625 15.1877V10.6877C14.625 10.3783 14.8781 10.1252 15.1875 10.1252C15.4969 10.1252 15.75 10.3783 15.75 10.6877V15.1877C15.75 16.7416 14.4914 18.0002 12.9375 18.0002H2.8125C1.2593 18.0002 0 16.7416 0 15.1877V5.06268C0 3.50948 1.2593 2.25018 2.8125 2.25018H7.3125Z" fill="#673AB7"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_181470_156328">
+                                        <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    </span>
+                                    <span>Edit</span>
+                                </div>
+                            </td>
+                            <!-- Table 1 Row-2 -->
+                        </tr>
+                        <!-- Table 1 Row 2 -->
+                        <tr class="border-b">
+                            <td scope="row" class="pl-2 pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap">
+                                09:00 PM
+                            </td>
+                            <td class="pr-6 py-4 w-auto text-black md:text-sm text-xs whitespace-nowrap">
+                                01:00 PM
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs">
+                                01 Hour
+                            </td>
+                            <td class="flex gap-2 pr-6 py-4">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.2533 13.9178L14.7591 13.7472C14.4003 13.706 14.0474 13.8296 13.7944 14.0825L12.7121 15.1649C11.0474 14.3178 9.68266 12.959 8.83561 11.2884L9.92384 10.2001C10.1768 9.94721 10.3003 9.59427 10.2591 9.23544L10.0885 7.75309C10.018 7.15897 9.51796 6.71191 8.91796 6.71191H7.90031C7.23561 6.71191 6.68266 7.26486 6.72384 7.92956C7.03561 12.9531 11.0533 16.9649 16.0709 17.2766C16.7356 17.3178 17.2885 16.7649 17.2885 16.1001V15.0825C17.2944 14.4884 16.8474 13.9884 16.2533 13.9178Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M16.4484 16.6586C17.1084 16.6586 17.6484 16.1186 17.6484 15.4586V8.25859C17.6484 7.59859 17.1084 7.05859 16.4484 7.05859H6.84844C6.18844 7.05859 5.65444 7.59859 5.65444 8.25859L5.64844 19.0586L8.04844 16.6586H16.4484ZM6.84844 16.1606V8.25859H16.4484V15.4586H7.55044L6.84844 16.1606ZM8.04844 13.0586H12.8484V14.2586H8.04844V13.0586ZM8.04844 11.2586H15.2484V12.4586H8.04844V11.2586ZM8.04844 9.45859H15.2484V10.6586H8.04844V9.45859Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M17.8824 8.5295C17.8824 7.88244 17.353 7.35303 16.7059 7.35303H7.29415C6.64709 7.35303 6.11768 7.88244 6.11768 8.5295V15.5883C6.11768 16.2354 6.64709 16.7648 7.29415 16.7648H16.7059C17.353 16.7648 17.8824 16.2354 17.8824 15.5883V8.5295ZM16.7059 8.5295L12 11.4707L7.29415 8.5295H16.7059ZM16.7059 15.5883H7.29415V9.70597L12 12.6471L16.7059 9.70597V15.5883Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                        <path
+                                            d="M12 9.11759V6.76465H6.11768V17.3529H17.8824V9.11759H12ZM8.47062 16.1764H7.29415V14.9999H8.47062V16.1764ZM8.47062 13.8235H7.29415V12.647H8.47062V13.8235ZM8.47062 11.4705H7.29415V10.2941H8.47062V11.4705ZM8.47062 9.11759H7.29415V7.94112H8.47062V9.11759ZM10.8236 16.1764H9.64709V14.9999H10.8236V16.1764ZM10.8236 13.8235H9.64709V12.647H10.8236V13.8235ZM10.8236 11.4705H9.64709V10.2941H10.8236V11.4705ZM10.8236 9.11759H9.64709V7.94112H10.8236V9.11759ZM16.7059 16.1764H12V14.9999H13.1765V13.8235H12V12.647H13.1765V11.4705H12V10.2941H16.7059V16.1764ZM15.5294 11.4705H14.353V12.647H15.5294V11.4705ZM15.5294 13.8235H14.353V14.9999H15.5294V13.8235Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="pr-6 py-4 text-black md:text-sm text-xs whitespace-nowrap">
+                                Islamabad Office
+                            </td>
+                            <td class="pl-36 py-4">
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="pl-8 py-4">
+                                <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_181470_156315)">
+                                        <path
+                                            d="M6.42857 17.7557C6.42857 18.1463 6.10714 18.4659 5.71429 18.4659C5.32143 18.4659 5 18.1463 5 17.7557V7.8125C5 7.42187 5.32143 7.10227 5.71429 7.10227C6.10714 7.10227 6.42857 7.42187 6.42857 7.8125V17.7557ZM10.7143 17.7557C10.7143 18.1463 10.3929 18.4659 10 18.4659C9.60714 18.4659 9.28571 18.1463 9.28571 17.7557V7.8125C9.28571 7.42187 9.60714 7.10227 10 7.10227C10.3929 7.10227 10.7143 7.42187 10.7143 7.8125V17.7557ZM15 17.7557C15 18.1463 14.6786 18.4659 14.2857 18.4659C13.8929 18.4659 13.5714 18.1463 13.5714 17.7557V7.8125C13.5714 7.42187 13.8929 7.10227 14.2857 7.10227C14.6786 7.10227 15 7.42187 15 7.8125V17.7557ZM13.8438 1.00142L15.0402 2.84091H19.2857C19.6786 2.84091 20 3.15874 20 3.55114C20 3.94354 19.6786 4.26136 19.2857 4.26136H18.5714V19.1761C18.5714 21.1381 16.9732 22.7273 15 22.7273H5C3.02768 22.7273 1.42857 21.1381 1.42857 19.1761V4.26136H0.714286C0.319821 4.26136 0 3.94354 0 3.55114C0 3.15874 0.319821 2.84091 0.714286 2.84091H4.95982L6.11607 1.00142C6.50893 0.378462 7.19643 0 7.93304 0H12.067C12.8036 0 13.4911 0.378462 13.8438 1.00142ZM6.64732 2.84091H13.3527L12.6696 1.75426C12.5402 1.54652 12.3125 1.42045 12.067 1.42045H7.93304C7.6875 1.42045 7.45982 1.54652 7.33036 1.75426L6.64732 2.84091ZM2.85714 19.1761C2.85714 20.3524 3.81652 21.3068 5 21.3068H15C16.183 21.3068 17.1429 20.3524 17.1429 19.1761V4.26136H2.85714V19.1761Z"
+                                            fill="#FF5252" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181470_156315">
+                                            <rect width="20" height="22.7273" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </td>
+                            <td class="pr-3 pl-10 py-4">
+                                <div class="button h-8 w-full flex gap-2 items-center justify-center rounded-lg bg-violet-100 p-2">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_181470_156328)">
+                                        <path d="M13.5949 0.795767C14.4738 -0.0829639 15.9012 -0.0829639 16.7801 0.795767L17.2055 1.22151C18.0844 2.10042 18.0844 3.52635 17.2055 4.40526L9.45703 12.1502C9.16172 12.449 8.78555 12.6248 8.37422 12.7514L5.18906 13.4861C4.99922 13.5283 4.80234 13.4721 4.66523 13.3349C4.52812 13.1978 4.47187 13.001 4.51406 12.8111L5.24883 9.62596C5.34375 9.21463 5.55117 8.83846 5.85 8.51151L13.5949 0.795767ZM15.982 1.59135C15.5426 1.1519 14.8324 1.1519 14.393 1.59135L13.4508 2.53143L15.4688 4.5494L16.4074 3.60721C16.8469 3.16881 16.8469 2.45655 16.4074 2.01709L15.982 1.59135ZM6.3457 9.87909L5.81133 12.1889L8.08945 11.6545C8.325 11.6088 8.51484 11.5033 8.6625 11.324L14.6742 5.34393L12.6562 3.32702L6.64453 9.33768C6.49687 9.48534 6.39141 9.67518 6.3457 9.87909ZM7.3125 2.25018C7.62187 2.25018 7.875 2.5019 7.875 2.81268C7.875 3.12346 7.62187 3.37518 7.3125 3.37518H2.8125C1.88051 3.37518 1.125 4.13104 1.125 5.06268V15.1877C1.125 16.1193 1.88051 16.8752 2.8125 16.8752H12.9375C13.8691 16.8752 14.625 16.1193 14.625 15.1877V10.6877C14.625 10.3783 14.8781 10.1252 15.1875 10.1252C15.4969 10.1252 15.75 10.3783 15.75 10.6877V15.1877C15.75 16.7416 14.4914 18.0002 12.9375 18.0002H2.8125C1.2593 18.0002 0 16.7416 0 15.1877V5.06268C0 3.50948 1.2593 2.25018 2.8125 2.25018H7.3125Z" fill="#673AB7"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_181470_156328">
+                                        <rect width="18" height="18" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    </span>
+                                    <span>Edit</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Monday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Tuesday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Wednesday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Thursday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Friday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Saturday</span>
+        </div>
+        <div class="day bg-gray-100 flex sm:flex-row flex-col-reverse justify-between items-center px-7 py-4 w-full mt-2">
+            <span class="font-medium md:text-xl text-base pt-1 sm:pt-0">Sunday</span>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

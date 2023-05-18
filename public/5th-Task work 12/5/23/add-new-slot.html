@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+
+    <link href="/public/css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="md:bg-gray-100 pt-5">
+    <div class="container bg-gray- pb-10">
+        <div class="header text-center p-3">
+            <div class="title md:font-medium text-base">Add New Slot to Monday</div>
+        </div>
+        <div class="main bg-white  pt-6 pb-9">
+
+            <!-- Timmings and Duration Portion -->
+            <div
+                class="timing-portion flex md:flex-row flex-col flex-wrap md:gap-0 gap-2 justify-between md:pb-5 pb-2 md:px-5 ">
+                <div class="start-time flex flex-col gap-1 ">
+                    <div class="sub-title md:text-sm text-xs text-gray-500 md:pl-7 md:ml-3 pl-10">Start Time
+                    </div>
+                    <div class="input md:flex-row flex items-center md:items-center gap-3">
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181470_156454)">
+                                    <path
+                                        d="M14.875 14C14.875 14.2898 14.7273 14.5633 14.4867 14.7273L9.23672 18.2273C8.83203 18.4953 8.29062 18.3859 8.02266 17.9867C7.75469 17.582 7.86406 17.0406 8.26328 16.7727L13.125 13.5297V6.125C13.125 5.64375 13.5188 5.25 14 5.25C14.4812 5.25 14.875 5.64375 14.875 6.125V14ZM28 14C28 21.7328 21.7328 28 14 28C6.26719 28 0 21.7328 0 14C0 6.26719 6.26719 0 14 0C21.7328 0 28 6.26719 28 14ZM14 1.75C7.23516 1.75 1.75 7.23516 1.75 14C1.75 20.7648 7.23516 26.25 14 26.25C20.7648 26.25 26.25 20.7648 26.25 14C26.25 7.23516 20.7648 1.75 14 1.75Z"
+                                        fill="#757575" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_181470_156454">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="text-area w-full">
+                            <input type="text" id="first_name"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block md:w-60 w-full h-10 p-2.5"
+                                placeholder="-- : -- : --" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="end-time flex flex-col gap-1">
+                    <div class="sub-title md:text-sm text-xs text-gray-500 md:pl-7 md:ml-3 pl-10">End Time
+                    </div>
+                    <div class="input md:flex-row flex items-center md:items-center gap-3">
+                        <div class="icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181470_156454)">
+                                    <path
+                                        d="M14.875 14C14.875 14.2898 14.7273 14.5633 14.4867 14.7273L9.23672 18.2273C8.83203 18.4953 8.29062 18.3859 8.02266 17.9867C7.75469 17.582 7.86406 17.0406 8.26328 16.7727L13.125 13.5297V6.125C13.125 5.64375 13.5188 5.25 14 5.25C14.4812 5.25 14.875 5.64375 14.875 6.125V14ZM28 14C28 21.7328 21.7328 28 14 28C6.26719 28 0 21.7328 0 14C0 6.26719 6.26719 0 14 0C21.7328 0 28 6.26719 28 14ZM14 1.75C7.23516 1.75 1.75 7.23516 1.75 14C1.75 20.7648 7.23516 26.25 14 26.25C20.7648 26.25 26.25 20.7648 26.25 14C26.25 7.23516 20.7648 1.75 14 1.75Z"
+                                        fill="#757575" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_181470_156454">
+                                        <rect width="28" height="28" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="text-area w-full">
+                            <input type="text" id="first_name"
+                                class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block md:w-60 w-full h-10 p-2.5"
+                                placeholder="-- : -- : --" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="Durtion flex flex-col gap-1 md:pl-9 pl-9 pt-2 md:pt-0">
+                    <label for="countries" class="block md:text-sm text-xs text-gray-500 md:pl-1 pl-1">Select
+                        Duration</label>
+                    <select id="countries"
+                        class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 blockn md:w-60 w-full md:h-10 h-10 md:p-2.5">
+                        <option selected> Duration</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Location Portion -->
+            <div class="location-portion md:pl-9 pl-4 md:mr-0  md:pb-5 md:px-5  ml-5 mt-5 md:mt-0">
+                <label for="countries" class="block md:text-sm text-xs text-gray-500 pl-1 pb-2 md:text-start">Select
+                    Office
+                    Location</label>
+                <select id="countries"
+                    class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-full w-full h-10 md:p-2.5">
+                    <option selected>
+                        <p class="bg-gray-500">Location</p>
+                    </option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+
+            <!-- Price Portion -->
+            <div class="price-portion flex md:flex-row items-center gap-3 md:gap-3 pb-5 md:pt-0 md:px-5 mt-5 md:mt-0">
+                <div class="icon md:pt-5 pt-5">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14 26.25C20.7655 26.25 26.25 20.7655 26.25 14C26.25 7.23451 20.7655 1.75 14 1.75C7.23451 1.75 1.75 7.23451 1.75 14C1.75 20.7655 7.23451 26.25 14 26.25ZM14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z"
+                            fill="#757575" />
+                        <path
+                            d="M7 18.5099V8.1665H10.7253C11.535 8.1665 12.207 8.30455 12.7411 8.58065C13.2786 8.85674 13.6801 9.23889 13.9454 9.72711C14.2108 10.212 14.3435 10.7726 14.3435 11.4089C14.3435 12.0419 14.2091 12.5992 13.9403 13.0806C13.675 13.5588 13.2735 13.9308 12.736 14.1968C12.2018 14.4628 11.5299 14.5958 10.7202 14.5958H7.89816V13.2524H10.5773C11.0877 13.2524 11.5027 13.18 11.8225 13.0352C12.1457 12.8904 12.3822 12.68 12.5319 12.4039C12.6815 12.1278 12.7564 11.7961 12.7564 11.4089C12.7564 11.0184 12.6798 10.68 12.5267 10.3938C12.3771 10.1076 12.1406 9.88873 11.8174 9.73721C11.4976 9.58233 11.0774 9.50489 10.5569 9.50489H8.57688V18.5099H7ZM12.1593 13.8433L14.7415 18.5099H12.9452L10.414 13.8433H12.1593Z"
+                            fill="#757575" />
+                        <path
+                            d="M22.0136 12.6463L20.6306 12.8887C20.5728 12.7136 20.4809 12.547 20.355 12.3887C20.2326 12.2305 20.0659 12.1008 19.8549 11.9998C19.644 11.8988 19.3803 11.8483 19.0639 11.8483C18.6319 11.8483 18.2712 11.9443 17.9821 12.1362C17.6929 12.3248 17.5483 12.5689 17.5483 12.8685C17.5483 13.1278 17.6452 13.3365 17.8392 13.4948C18.0331 13.653 18.3461 13.7827 18.7782 13.8837L20.0233 14.1665C20.7446 14.3315 21.2821 14.5857 21.6359 14.9291C21.9898 15.2726 22.1667 15.7187 22.1667 16.2675C22.1667 16.7322 22.0306 17.1463 21.7584 17.5099C21.4896 17.8702 21.1137 18.153 20.6306 18.3584C20.1509 18.5638 19.5947 18.6665 18.9619 18.6665C18.0841 18.6665 17.368 18.4813 16.8134 18.1109C16.2589 17.7372 15.9187 17.2069 15.7928 16.52L17.2676 16.2978C17.3595 16.6783 17.5483 16.9662 17.8341 17.1615C18.1198 17.3534 18.4924 17.4493 18.9517 17.4493C19.4518 17.4493 19.8515 17.3466 20.1509 17.1413C20.4503 16.9325 20.6 16.6783 20.6 16.3786C20.6 16.1362 20.5081 15.9325 20.3244 15.7675C20.1441 15.6025 19.8668 15.478 19.4926 15.3938L18.1658 15.1059C17.4343 14.9409 16.8934 14.6783 16.543 14.318C16.1959 13.9577 16.0224 13.5015 16.0224 12.9493C16.0224 12.4914 16.1517 12.0907 16.4103 11.7473C16.6688 11.4039 17.0261 11.1362 17.4819 10.9443C17.9378 10.749 18.4601 10.6514 19.0486 10.6514C19.8957 10.6514 20.5626 10.8332 21.0491 11.1968C21.5356 11.5571 21.8571 12.0402 22.0136 12.6463Z"
+                            fill="#757575" />
+                    </svg>
+                </div>
+                <div class="list w-full">
+                    <label for="countries" class="block md:text-sm text-xs text-gray-500 pl-1 pb-2 md:text-start">Select
+                        Price</label>
+                    <select id="countries"
+                        class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-full w-full h-10 p-2.5">
+                        <option selected>Enter Price</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Consultation Modes -->
+            <div class="consultation-modes grid md:grid-cols-3 gap-5 grid-cols-1 justify-items-start md:pl-8 md:px-5"  x-data="{ open: false}">
+                <!-- Toggle List -->
+                <div class="toggle-list md:pl-6 flex flex-col gap-1 md:col-span-1 w-full">
+                    <div class="heading pb-2 text-gray-500 md:text-sm text-xs text-center">Select Consultation Modes
+                    </div>
+                    <!-- Option 1 -->
+                    <a class="show-hide" href="javascript:;" x-on:click="open = !open">
+                        <div class=" option-1 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 fixed:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156409)">
+                                                <path
+                                                    d="M16.2533 13.9178L14.7591 13.7472C14.4003 13.706 14.0474 13.8296 13.7944 14.0825L12.7121 15.1649C11.0474 14.3178 9.68266 12.959 8.83561 11.2884L9.92384 10.2001C10.1768 9.94721 10.3003 9.59427 10.2591 9.23544L10.0885 7.75309C10.018 7.15897 9.51796 6.71191 8.91796 6.71191H7.90031C7.23561 6.71191 6.68266 7.26486 6.72384 7.92956C7.03561 12.9531 11.0533 16.9649 16.0709 17.2766C16.7356 17.3178 17.2885 16.7649 17.2885 16.1001V15.0825C17.2944 14.4884 16.8474 13.9884 16.2533 13.9178Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156409">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 4.94141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">Phone</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Option 2 -->
+                    <a class="show-hide" href="javascript:;" x-on:click="!open = open">
+                        <div class=" option-2 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156418)">
+                                                <path
+                                                    d="M14.9413 11.1178V8.4707H6.70605V15.5295H14.9413V12.8825L17.2943 15.2354V8.76482L14.9413 11.1178Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156418">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 4.94141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">Video</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Option 3 -->
+                    <a class="show-hide" href="javascript:;" x-on:click="open = !open">
+                        <div class=" option-2 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156425)">
+                                                <path
+                                                    d="M17.8829 8.5295C17.8829 7.88244 17.3535 7.35303 16.7064 7.35303H7.29463C6.64758 7.35303 6.11816 7.88244 6.11816 8.5295V15.5883C6.11816 16.2354 6.64758 16.7648 7.29463 16.7648H16.7064C17.3535 16.7648 17.8829 16.2354 17.8829 15.5883V8.5295ZM16.7064 8.5295L12.0005 11.4707L7.29463 8.5295H16.7064ZM16.7064 15.5883H7.29463V9.70597L12.0005 12.6471L16.7064 9.70597V15.5883Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156425">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">Chat</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Option 4 -->
+                    <a href="javascript:;" x-on:click="open = !open">
+                        <div class=" option-2 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156425)">
+                                                <path
+                                                    d="M17.8829 8.5295C17.8829 7.88244 17.3535 7.35303 16.7064 7.35303H7.29463C6.64758 7.35303 6.11816 7.88244 6.11816 8.5295V15.5883C6.11816 16.2354 6.64758 16.7648 7.29463 16.7648H16.7064C17.3535 16.7648 17.8829 16.2354 17.8829 15.5883V8.5295ZM16.7064 8.5295L12.0005 11.4707L7.29463 8.5295H16.7064ZM16.7064 15.5883H7.29463V9.70597L12.0005 12.6471L16.7064 9.70597V15.5883Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156425">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">Email</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Option 5 -->
+                    <a href="javascript:;" x-on:click="open = !open">
+                        <div class=" option-2 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156429)">
+                                                <path
+                                                    d="M12.0005 9.11759V6.76465H6.11816V17.3529H17.8829V9.11759H12.0005ZM8.47111 16.1764H7.29463V14.9999H8.47111V16.1764ZM8.47111 13.8235H7.29463V12.647H8.47111V13.8235ZM8.47111 11.4705H7.29463V10.2941H8.47111V11.4705ZM8.47111 9.11759H7.29463V7.94112H8.47111V9.11759ZM10.824 16.1764H9.64758V14.9999H10.824V16.1764ZM10.824 13.8235H9.64758V12.647H10.824V13.8235ZM10.824 11.4705H9.64758V10.2941H10.824V11.4705ZM10.824 9.11759H9.64758V7.94112H10.824V9.11759ZM16.7064 16.1764H12.0005V14.9999H13.177V13.8235H12.0005V12.647H13.177V11.4705H12.0005V10.2941H16.7064V16.1764ZM15.5299 11.4705H14.3535V12.647H15.5299V11.4705ZM15.5299 13.8235H14.3535V14.9999H15.5299V13.8235Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156429">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">At Office</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Option 6 -->
+                    <a href="javascript:;" x-on:click="open = !open">
+                        <div class=" option-2 flex items-center pr-1 w-full">
+                            <div
+                                class="content flex justify-between items-center w-full   h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
+                                <div class="title flex items-center gap-2 pl-2">
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="12" fill="#673AB7" />
+                                            <g clip-path="url(#clip0_181470_156429)">
+                                                <path
+                                                    d="M12.0005 9.11759V6.76465H6.11816V17.3529H17.8829V9.11759H12.0005ZM8.47111 16.1764H7.29463V14.9999H8.47111V16.1764ZM8.47111 13.8235H7.29463V12.647H8.47111V13.8235ZM8.47111 11.4705H7.29463V10.2941H8.47111V11.4705ZM8.47111 9.11759H7.29463V7.94112H8.47111V9.11759ZM10.824 16.1764H9.64758V14.9999H10.824V16.1764ZM10.824 13.8235H9.64758V12.647H10.824V13.8235ZM10.824 11.4705H9.64758V10.2941H10.824V11.4705ZM10.824 9.11759H9.64758V7.94112H10.824V9.11759ZM16.7064 16.1764H12.0005V14.9999H13.177V13.8235H12.0005V12.647H13.177V11.4705H12.0005V10.2941H16.7064V16.1764ZM15.5299 11.4705H14.3535V12.647H15.5299V11.4705ZM15.5299 13.8235H14.3535V14.9999H15.5299V13.8235Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_181470_156429">
+                                                    <rect width="14.1176" height="14.1176" fill="white"
+                                                        transform="translate(4.94141 5)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title md:text-sm text-xs text-gray-500">At Client Location</div>
+                                </div>
+                                <div class="toggle pr-2 pt-1.5">
+                                    <label class="relative inline-flex items-center w-full cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Phone/Zoom Cusoltation and Prices -->
+                <div class="Cunsoltation-right-portion md:mt-0 w-full md:col-span-2 md:px-5 md:pt-8" x-show="open">
+                    <div
+                        class="add-phone text-violet-600 font-semibold md:text-sm text-xs pl-2 md:pl-0 pb-6 text-center md:text-start">
+                        Add Phone
+                        Consultation Details</div>
+                    <!-- Alert -->
+                    <div
+                        class="alert flex md:flex-row flex-col items-center md:text-sm text-xs md:justify-between md:items-center rounded-md p-2 w-full md:w-full bg-red-100" x-show="!open">
+                        <div class="merge flex gap-2">
+                            <div class="alert-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_181470_156519)">
+                                        <path
+                                            d="M10 1.875C12.1549 1.875 14.2215 2.73102 15.7452 4.25476C17.269 5.77849 18.125 7.84512 18.125 10C18.125 12.1549 17.269 14.2215 15.7452 15.7452C14.2215 17.269 12.1549 18.125 10 18.125C7.84512 18.125 5.77849 17.269 4.25476 15.7452C2.73102 14.2215 1.875 12.1549 1.875 10C1.875 7.84512 2.73102 5.77849 4.25476 4.25476C5.77849 2.73102 7.84512 1.875 10 1.875ZM10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20ZM8.4375 13.125C7.91797 13.125 7.5 13.543 7.5 14.0625C7.5 14.582 7.91797 15 8.4375 15H11.5625C12.082 15 12.5 14.582 12.5 14.0625C12.5 13.543 12.082 13.125 11.5625 13.125H11.25V9.6875C11.25 9.16797 10.832 8.75 10.3125 8.75H8.4375C7.91797 8.75 7.5 9.16797 7.5 9.6875C7.5 10.207 7.91797 10.625 8.4375 10.625H9.375V13.125H8.4375ZM10 7.5C10.3315 7.5 10.6495 7.3683 10.8839 7.13388C11.1183 6.89946 11.25 6.58152 11.25 6.25C11.25 5.91848 11.1183 5.60054 10.8839 5.36612C10.6495 5.1317 10.3315 5 10 5C9.66848 5 9.35054 5.1317 9.11612 5.36612C8.8817 5.60054 8.75 5.91848 8.75 6.25C8.75 6.58152 8.8817 6.89946 9.11612 7.13388C9.35054 7.3683 9.66848 7.5 10 7.5Z"
+                                            fill="#EF4444" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_181470_156519">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="text md:text-sm text-xs text-red-500">Zoom video integration is missing.</div>
+                        </div>
+                        <div><a href="#" class="text-blue-600">Click here to setup</a></div>
+                    </div>
+                    <!-- Price -->
+                    <div class="visible">
+                        <div class="price mb-4 pt-4">
+                            <label for="default-input" class="block mb-1 md:text-sm text-xs text-gray-500">Price</label>
+                            <input type="text" id="default-input"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        </div>
+                        <!-- Note -->
+                        <div class="text-note">
+                            <label for="message" class="block mb-1 md:text-sm text-xs text-gray-500">Note</label>
+                            <textarea id="message" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Write your thoughts here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Time Slot Selection -->
+            <div class="time-slot flex justify-between bg-gray-100 w-full p-5 mt-6 ">
+                <div class="text font-medium md:text-base text-xs md:ml-8">Enable this time slot for public booking?
+                </div>
+                <div class="option flex items-center gap-2">
+                    <div class="yes/no md:text-base text-sm">Yes</div>
+                    <div class="button">
+                        <div class="toggle pr-2 pt-1.5">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Time Slot Selection -->
+            <div class="time-slot flex flex-col justify-between bg-gray-100 w-full p-5 mt-6 ">
+                <div class="text font-medium md:text-base text-xs md:text-start text-center md:pl-8">Do you want to
+                    replicate this
+                    schedule to another day?</div>
+                <div
+                    class="options flex items-center md:justify-start justify-start flex-wrap gap-x-16 gap-y-7 pt-7 md:pl-8">
+                    <div class="monday flex items-center gap-2 ">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Monday</span>
+                    </div>
+                    <div class="tuesday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Tuesday</span>
+                    </div>
+                    <div class="wednesday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Wednesday</span>
+                    </div>
+                    <div class="thursday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Thursday</span>
+                    </div>
+                    <div class="friday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Friday</span>
+                    </div>
+                    <div class="saturday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Saturday</span>
+                    </div>
+                    <div class="sunday flex items-center gap-2">
+                        <span class="toggle pt-2">
+                            <label class="relative inline-flex items-center w-full cursor-pointer">
+                                <input type="checkbox" value="" class="sr-only peer">
+                                <div
+                                    class="w-9 h-5 bg-gray-400 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-violet-600 after:rounded-full after:h-4 after:w-4 after:transition-all  peer-checked:bg-purple-200">
+                                </div>
+                            </label>
+                        </span>
+                        <span class="day text-gray-500 font-medium md:text-base text-sm">Sunday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
