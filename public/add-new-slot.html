@@ -142,13 +142,15 @@
             </div>
 
             <!-- Consultation Modes -->
-            <div class="consultation-modes grid md:grid-cols-3 gap-5 grid-cols-1 justify-items-start md:pl-8 md:px-5"  x-data="{ open: false}">
+            <div class="consultation-modes grid md:grid-cols-3 gap-5 grid-cols-1 justify-items-start md:pl-8 md:px-5">
                 <!-- Toggle List -->
-                <div class="toggle-list md:pl-6 flex flex-col gap-1 md:col-span-1 w-full">
+                <div
+                    x-data="{opentab: 1}"
+                 class="toggle-list md:pl-6 flex flex-col gap-1 md:col-span-1 w-full ">
                     <div class="heading pb-2 text-gray-500 md:text-sm text-xs text-center">Select Consultation Modes
                     </div>
                     <!-- Option 1 -->
-                    <a class="show-hide" href="javascript:;" x-on:click="open = !open">
+                    <a class="show-hide" href="javascript:;">
                         <div class=" option-1 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 fixed:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -185,7 +187,7 @@
                         </div>
                     </a>
                     <!-- Option 2 -->
-                    <a class="show-hide" href="javascript:;" x-on:click="!open = open">
+                    <a href="javascript:;">
                         <div class=" option-2 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -221,7 +223,7 @@
                         </div>
                     </a>
                     <!-- Option 3 -->
-                    <a class="show-hide" href="javascript:;" x-on:click="open = !open">
+                    <a href="javascript:;">
                         <div class=" option-2 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -257,7 +259,7 @@
                         </div>
                     </a>
                     <!-- Option 4 -->
-                    <a href="javascript:;" x-on:click="open = !open">
+                    <a href="javascript:;">
                         <div class=" option-2 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -293,7 +295,7 @@
                         </div>
                     </a>
                     <!-- Option 5 -->
-                    <a href="javascript:;" x-on:click="open = !open">
+                    <a href="javascript:;">
                         <div class=" option-2 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -329,7 +331,7 @@
                         </div>
                     </a>
                     <!-- Option 6 -->
-                    <a href="javascript:;" x-on:click="open = !open">
+                    <a href="javascript:;">
                         <div class=" option-2 flex items-center pr-1 w-full">
                             <div
                                 class="content flex justify-between items-center w-full   h-12 border-2 hover:border-l-violet-600 hover:border-t-white hover:border-b-white hover:border-white">
@@ -367,14 +369,14 @@
                 </div>
 
                 <!-- Phone/Zoom Cusoltation and Prices -->
-                <div class="Cunsoltation-right-portion md:mt-0 w-full md:col-span-2 md:px-5 md:pt-8" x-show="open">
+                <div class="Cunsoltation-right-portion md:mt-0 w-full md:col-span-2 md:px-5 md:pt-8">
                     <div
                         class="add-phone text-violet-600 font-semibold md:text-sm text-xs pl-2 md:pl-0 pb-6 text-center md:text-start">
                         Add Phone
                         Consultation Details</div>
                     <!-- Alert -->
                     <div
-                        class="alert flex md:flex-row flex-col items-center md:text-sm text-xs md:justify-between md:items-center rounded-md p-2 w-full md:w-full bg-red-100" x-show="!open">
+                        class="alert flex md:flex-row flex-col items-center md:text-sm text-xs md:justify-between md:items-center rounded-md p-2 w-full md:w-full bg-red-100">
                         <div class="merge flex gap-2">
                             <div class="alert-icon">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
