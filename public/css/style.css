@@ -733,9 +733,6 @@ select {
 .left-14 {
   left: 3.5rem;
 }
-.left-72 {
-  left: 18rem;
-}
 .left-96 {
   left: 24rem;
 }
@@ -757,8 +754,8 @@ select {
 .top-4 {
   top: 1rem;
 }
-.top-40 {
-  top: 10rem;
+.top-72 {
+  top: 18rem;
 }
 .z-0 {
   z-index: 0;
@@ -1036,6 +1033,10 @@ select {
 .h-screen {
   height: 100vh;
 }
+.max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1074,9 +1075,6 @@ select {
 }
 .w-3\/4 {
   width: 75%;
-}
-.w-3\/6 {
-  width: 50%;
 }
 .w-32 {
   width: 8rem;
@@ -1151,6 +1149,9 @@ select {
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.max-w-4xl {
+  max-width: 56rem;
 }
 .max-w-lg {
   max-width: 32rem;
@@ -1470,10 +1471,6 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(76 29 149 / var(--tw-border-opacity));
 }
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
 .bg-\[\#0EA5E9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -1598,6 +1595,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
+.bg-purple-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
 .bg-purple-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
@@ -1606,9 +1607,9 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
-.bg-purple-900 {
+.bg-purple-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 .bg-red-100 {
   --tw-bg-opacity: 1;
@@ -1669,9 +1670,6 @@ select {
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1683,11 +1681,6 @@ select {
 .from-\[\#FFFBC1\] {
   --tw-gradient-from: #FFFBC1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 251 193 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.from-purple-300 {
-  --tw-gradient-from: #d8b4fe var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(216 180 254 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-violet-100 {
@@ -2194,10 +2187,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
 }
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -2491,11 +2480,6 @@ select {
 .hover\:bg-purple-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-950:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 7 100 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-red-800:hover {
@@ -3037,14 +3021,6 @@ select {
 
 @media (min-width: 768px) {
 
-  .md\:absolute {
-    position: absolute;
-  }
-
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3154,6 +3130,18 @@ select {
     width: 100%;
   }
 
+  .md\:w-0 {
+    width: 0px;
+  }
+
+  .md\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
   .md\:max-w-lg {
     max-width: 32rem;
   }
@@ -3178,6 +3166,10 @@ select {
     flex-direction: column;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -3194,6 +3186,10 @@ select {
     gap: 0px;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:gap-20 {
     gap: 5rem;
   }
@@ -3204,10 +3200,6 @@ select {
 
   .md\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
