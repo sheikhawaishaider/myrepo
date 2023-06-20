@@ -55,7 +55,7 @@
                 <div class="add-1 flex flex-col items-center">
                     <div class="w-36 h-36 flex justify-center items-center bg-gray-50 rounded-xl relative">
                         <span class="delete absolute top-1 right-1">
-                            <a href="javascript:;">
+                            <a onclick="delclientmodal.showModal()" href="javascript:;">
                                 <div
                                     class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
                                     <span>
@@ -97,7 +97,7 @@
                 <div class="add-2 flex flex-col items-center">
                     <div class="w-36 h-36 flex justify-center items-center bg-white border rounded-xl relative">
                         <span class="delete absolute top-1 right-1">
-                            <a href="javascript:;">
+                            <a onclick="delclientmodal.showModal()" href="javascript:;">
                                 <div
                                     class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
                                     <span>
@@ -149,7 +149,7 @@
                 <div class="add-2 flex flex-col items-center">
                     <div class="w-36 h-36 flex justify-center items-center bg-white border rounded-xl relative">
                         <span class="delete absolute top-1 right-1">
-                            <a href="javascript:;">
+                            <a onclick="delclientmodal.showModal()" href="javascript:;">
                                 <div
                                     class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
                                     <span>
@@ -193,12 +193,11 @@
                         </span>
                     </div>
                     <div class="title text-900 font-semibold text-sm">
-                        Honda Atlas
+                        Pepsi Pakistan
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Portion----2  -->
         <div class="Certifications">
@@ -229,7 +228,7 @@
             <div class="box-1 flex flex-col gap-7 items-start p-5 bg-white border border-gray-300 rounded-xl">
                 <!-- Add -->
                 <div class="flex md:items-center items-start justify-between w-full">
-                    <div class="add-1 add-2 flex md:flex-row flex-col gap-3 items-center">
+                    <div class="add-1 add-2 flex flex-col gap-3 items-center">
                         <div class="w-36 h-36 flex justify-center items-center bg-gray-50 border rounded-xl">
                             <span>
                                 <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
@@ -275,7 +274,7 @@
                             </a>
                         </div>
                         <div class="delete">
-                            <a href="javascript:;">
+                            <a onclick="delcertificationmodal.showModal()" href="javascript:;">
                                 <div
                                     class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
                                     <span>
@@ -339,30 +338,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="delete">
-                        <a href="javascript:;">
-                            <div
-                                class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
-                                <span>
-                                    <svg width="14" height="16" viewBox="0 0 14 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.87286 0.499982H8.12715C8.27142 0.49989 8.3971 0.49981 8.51578 0.518761C8.98464 0.593632 9.39037 0.886067 9.60967 1.3072C9.66518 1.41379 9.70485 1.53304 9.75038 1.66993L9.82479 1.8932C9.83738 1.93099 9.84099 1.94169 9.84404 1.95011C9.96079 2.27286 10.2635 2.49103 10.6066 2.49973C10.6156 2.49996 10.6266 2.5 10.6667 2.5H12.6667C12.9428 2.5 13.1667 2.72385 13.1667 3C13.1667 3.27614 12.9428 3.5 12.6667 3.5H1.33328C1.05714 3.5 0.833282 3.27614 0.833282 3C0.833282 2.72385 1.05714 2.5 1.33328 2.5H3.33334C3.37337 2.5 3.38442 2.49996 3.39344 2.49973C3.73654 2.49103 4.03922 2.27287 4.15596 1.95013C4.15903 1.94165 4.16257 1.93118 4.17522 1.8932L4.24963 1.66995C4.29516 1.53306 4.33483 1.41379 4.39034 1.3072C4.60964 0.886069 5.01537 0.593632 5.48423 0.518761C5.60291 0.49981 5.7286 0.49989 5.87286 0.499982ZM5.00538 2.5C5.03972 2.43265 5.07015 2.36266 5.09633 2.29029C5.10428 2.26831 5.11208 2.24492 5.1221 2.21486L5.18863 2.01525C5.24941 1.83291 5.26341 1.79572 5.27729 1.76906C5.35039 1.62869 5.48563 1.53121 5.64192 1.50625C5.6716 1.50151 5.7113 1.5 5.90351 1.5H8.0965C8.28871 1.5 8.32841 1.50151 8.35809 1.50625C8.51438 1.53121 8.64962 1.62869 8.72272 1.76906C8.7366 1.79572 8.7506 1.83291 8.81138 2.01525L8.87787 2.21474L8.90368 2.2903C8.92986 2.36267 8.96029 2.43265 8.99463 2.5H5.00538Z"
-                                            fill="#EF4444" />
-                                        <path
-                                            d="M2.94334 4.6334C2.92497 4.35787 2.68672 4.1494 2.41119 4.16777C2.13566 4.18614 1.92719 4.42439 1.94556 4.69992L2.25452 9.33441C2.31152 10.1896 2.35756 10.8803 2.46554 11.4224C2.57781 11.9859 2.76875 12.4566 3.16315 12.8256C3.55755 13.1946 4.03991 13.3538 4.60968 13.4283C5.1577 13.5 5.84998 13.5 6.70702 13.5H7.29295C8.14999 13.5 8.84231 13.5 9.39033 13.4283C9.9601 13.3538 10.4425 13.1946 10.8369 12.8256C11.2313 12.4566 11.4222 11.9859 11.5345 11.4224C11.6425 10.8803 11.6885 10.1896 11.7455 9.33442L12.0545 4.69992C12.0728 4.42439 11.8644 4.18614 11.5888 4.16777C11.3133 4.1494 11.075 4.35787 11.0567 4.6334L10.75 9.23281C10.6901 10.1314 10.6475 10.7566 10.5537 11.227C10.4628 11.6833 10.336 11.9248 10.1537 12.0954C9.9714 12.2659 9.72196 12.3764 9.26063 12.4368C8.78502 12.499 8.15835 12.5 7.25779 12.5H6.74222C5.84166 12.5 5.21499 12.499 4.73938 12.4368C4.27805 12.3764 4.02861 12.2659 3.84634 12.0954C3.66406 11.9248 3.53717 11.6833 3.44627 11.227C3.35256 10.7566 3.30987 10.1314 3.24997 9.23281L2.94334 4.6334Z"
-                                            fill="#EF4444" />
-                                        <path
-                                            d="M5.28359 5.83581C5.55836 5.80833 5.80338 6.0088 5.83086 6.28358L6.1642 9.61691C6.19167 9.89168 5.9912 10.1367 5.71643 10.1642C5.44166 10.1917 5.19664 9.99119 5.16916 9.71641L4.83583 6.38308C4.80835 6.10831 5.00882 5.86329 5.28359 5.83581Z"
-                                            fill="#EF4444" />
-                                        <path
-                                            d="M8.71643 5.83581C8.9912 5.86329 9.19167 6.10831 9.1642 6.38308L8.83086 9.71641C8.80339 9.99119 8.55836 10.1917 8.28359 10.1642C8.00882 10.1367 7.80835 9.89168 7.83583 9.61691L8.16916 6.28358C8.19664 6.0088 8.44166 5.80833 8.71643 5.83581Z"
-                                            fill="#EF4444" />
-                                    </svg>
+                    <div class="icons flex gap-2">
+                        <div class="edit">
+                            <a href="javascript:;">
+                                <div
+                                    class="edit bg-gray-200 hover:bg-gray-300 p-1 flex justify-center items-center rounded-lg">
+                                    <span>
+                                        <svg width="19" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.95697 0.9375L10.125 0.9375C10.4357 0.9375 10.6875 1.18934 10.6875 1.5C10.6875 1.81066 10.4357 2.0625 10.125 2.0625H9C7.21633 2.0625 5.93517 2.06369 4.96018 2.19478C4.00138 2.32369 3.42334 2.56886 2.9961 2.9961C2.56886 3.42334 2.32369 4.00138 2.19478 4.96018C2.06369 5.93517 2.0625 7.21633 2.0625 9C2.0625 10.7837 2.06369 12.0648 2.19478 13.0398C2.32369 13.9986 2.56886 14.5767 2.9961 15.0039C3.42334 15.4311 4.00138 15.6763 4.96018 15.8052C5.93517 15.9363 7.21633 15.9375 9 15.9375C10.7837 15.9375 12.0648 15.9363 13.0398 15.8052C13.9986 15.6763 14.5767 15.4311 15.0039 15.0039C15.4311 14.5767 15.6763 13.9986 15.8052 13.0398C15.9363 12.0648 15.9375 10.7837 15.9375 9V7.875C15.9375 7.56434 16.1893 7.3125 16.5 7.3125C16.8107 7.3125 17.0625 7.56434 17.0625 7.875V9.04303C17.0625 10.7743 17.0625 12.1311 16.9202 13.1897C16.7745 14.2733 16.4705 15.1283 15.7994 15.7994C15.1283 16.4705 14.2733 16.7745 13.1897 16.9202C12.1311 17.0625 10.7743 17.0625 9.04303 17.0625H8.95697C7.22567 17.0625 5.8689 17.0625 4.81028 16.9202C3.72673 16.7745 2.87171 16.4705 2.2006 15.7994C1.5295 15.1283 1.22549 14.2733 1.07981 13.1897C0.937483 12.1311 0.937491 10.7743 0.9375 9.04303V8.95697C0.937491 7.22567 0.937483 5.86889 1.07981 4.81028C1.22549 3.72673 1.5295 2.87171 2.2006 2.2006C2.87171 1.5295 3.72673 1.22549 4.81028 1.07981C5.86889 0.937483 7.22567 0.937491 8.95697 0.9375ZM12.5779 1.70694C13.6038 0.681022 15.2671 0.681022 16.2931 1.70694C17.319 2.73285 17.319 4.39619 16.2931 5.4221L11.307 10.4082C11.0285 10.6867 10.8541 10.8611 10.6594 11.013C10.4302 11.1918 10.1821 11.3451 9.91961 11.4702C9.69676 11.5764 9.46271 11.6544 9.08909 11.7789L6.9107 12.505C6.50851 12.6391 6.0651 12.5344 5.76533 12.2347C5.46556 11.9349 5.36089 11.4915 5.49495 11.0893L6.22108 8.91092C6.34559 8.53729 6.42359 8.30324 6.5298 8.08039C6.65489 7.81791 6.80821 7.56984 6.98703 7.34056C7.13887 7.1459 7.31333 6.97147 7.59183 6.693L12.5779 1.70694ZM15.4976 2.50243C14.911 1.91586 13.96 1.91586 13.3734 2.50243L13.0909 2.7849C13.108 2.85679 13.1318 2.94245 13.1649 3.038C13.2724 3.34779 13.4758 3.75579 13.86 4.13999C14.2442 4.5242 14.6522 4.7276 14.962 4.83508C15.0575 4.86823 15.1432 4.89205 15.2151 4.90907L15.4976 4.62661C16.0841 4.04003 16.0841 3.08901 15.4976 2.50243ZM14.3289 5.79532C13.9419 5.6289 13.4911 5.36209 13.0645 4.93549C12.6379 4.50889 12.3711 4.05812 12.2047 3.67114L8.41313 7.46269C8.10075 7.77508 7.97823 7.89897 7.87411 8.03246C7.74553 8.19731 7.6353 8.37567 7.54536 8.56439C7.47252 8.71722 7.41651 8.8822 7.2768 9.30131L6.95288 10.2731L7.72693 11.0471L8.69869 10.7232C9.1178 10.5835 9.28278 10.5275 9.43561 10.4546C9.62433 10.3647 9.80269 10.2545 9.96754 10.1259C10.101 10.0218 10.2249 9.89926 10.5373 9.58687L14.3289 5.79532Z"
+                                                fill="#6B7280" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="delete">
+                            <a onclick="delcertificationmodal.showModal()" href="javascript:;">
+                                <div
+                                    class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
+                                    <span>
+                                        <svg width="14" height="16" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.87286 0.499982H8.12715C8.27142 0.49989 8.3971 0.49981 8.51578 0.518761C8.98464 0.593632 9.39037 0.886067 9.60967 1.3072C9.66518 1.41379 9.70485 1.53304 9.75038 1.66993L9.82479 1.8932C9.83738 1.93099 9.84099 1.94169 9.84404 1.95011C9.96079 2.27286 10.2635 2.49103 10.6066 2.49973C10.6156 2.49996 10.6266 2.5 10.6667 2.5H12.6667C12.9428 2.5 13.1667 2.72385 13.1667 3C13.1667 3.27614 12.9428 3.5 12.6667 3.5H1.33328C1.05714 3.5 0.833282 3.27614 0.833282 3C0.833282 2.72385 1.05714 2.5 1.33328 2.5H3.33334C3.37337 2.5 3.38442 2.49996 3.39344 2.49973C3.73654 2.49103 4.03922 2.27287 4.15596 1.95013C4.15903 1.94165 4.16257 1.93118 4.17522 1.8932L4.24963 1.66995C4.29516 1.53306 4.33483 1.41379 4.39034 1.3072C4.60964 0.886069 5.01537 0.593632 5.48423 0.518761C5.60291 0.49981 5.7286 0.49989 5.87286 0.499982ZM5.00538 2.5C5.03972 2.43265 5.07015 2.36266 5.09633 2.29029C5.10428 2.26831 5.11208 2.24492 5.1221 2.21486L5.18863 2.01525C5.24941 1.83291 5.26341 1.79572 5.27729 1.76906C5.35039 1.62869 5.48563 1.53121 5.64192 1.50625C5.6716 1.50151 5.7113 1.5 5.90351 1.5H8.0965C8.28871 1.5 8.32841 1.50151 8.35809 1.50625C8.51438 1.53121 8.64962 1.62869 8.72272 1.76906C8.7366 1.79572 8.7506 1.83291 8.81138 2.01525L8.87787 2.21474L8.90368 2.2903C8.92986 2.36267 8.96029 2.43265 8.99463 2.5H5.00538Z"
+                                                fill="#EF4444" />
+                                            <path
+                                                d="M2.94334 4.6334C2.92497 4.35787 2.68672 4.1494 2.41119 4.16777C2.13566 4.18614 1.92719 4.42439 1.94556 4.69992L2.25452 9.33441C2.31152 10.1896 2.35756 10.8803 2.46554 11.4224C2.57781 11.9859 2.76875 12.4566 3.16315 12.8256C3.55755 13.1946 4.03991 13.3538 4.60968 13.4283C5.1577 13.5 5.84998 13.5 6.70702 13.5H7.29295C8.14999 13.5 8.84231 13.5 9.39033 13.4283C9.9601 13.3538 10.4425 13.1946 10.8369 12.8256C11.2313 12.4566 11.4222 11.9859 11.5345 11.4224C11.6425 10.8803 11.6885 10.1896 11.7455 9.33442L12.0545 4.69992C12.0728 4.42439 11.8644 4.18614 11.5888 4.16777C11.3133 4.1494 11.075 4.35787 11.0567 4.6334L10.75 9.23281C10.6901 10.1314 10.6475 10.7566 10.5537 11.227C10.4628 11.6833 10.336 11.9248 10.1537 12.0954C9.9714 12.2659 9.72196 12.3764 9.26063 12.4368C8.78502 12.499 8.15835 12.5 7.25779 12.5H6.74222C5.84166 12.5 5.21499 12.499 4.73938 12.4368C4.27805 12.3764 4.02861 12.2659 3.84634 12.0954C3.66406 11.9248 3.53717 11.6833 3.44627 11.227C3.35256 10.7566 3.30987 10.1314 3.24997 9.23281L2.94334 4.6334Z"
+                                                fill="#EF4444" />
+                                            <path
+                                                d="M5.28359 5.83581C5.55836 5.80833 5.80338 6.0088 5.83086 6.28358L6.1642 9.61691C6.19167 9.89168 5.9912 10.1367 5.71643 10.1642C5.44166 10.1917 5.19664 9.99119 5.16916 9.71641L4.83583 6.38308C4.80835 6.10831 5.00882 5.86329 5.28359 5.83581Z"
+                                                fill="#EF4444" />
+                                            <path
+                                                d="M8.71643 5.83581C8.9912 5.86329 9.19167 6.10831 9.1642 6.38308L8.83086 9.71641C8.80339 9.99119 8.55836 10.1917 8.28359 10.1642C8.00882 10.1367 7.80835 9.89168 7.83583 9.61691L8.16916 6.28358C8.19664 6.0088 8.44166 5.80833 8.71643 5.83581Z"
+                                                fill="#EF4444" />
+                                        </svg>
 
-                                </span>
-                            </div>
-                        </a>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -438,7 +454,7 @@
                             </a>
                         </div>
                         <div class="delete">
-                            <a href="javascript:;">
+                            <a onclick="delreportedcasesmodal.showModal()" href="javascript:;">
                                 <div
                                     class="delete bg-red-100 hover:bg-red-200 p-1.5 flex justify-center items-center rounded-lg">
                                     <span>
@@ -561,7 +577,7 @@
                             Name</label>
                         <input type="text" id="first_name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr">
+                            placeholder="e.g. Honda Atlas">
                     </div>
                 </section>
             </div>
@@ -659,7 +675,7 @@
                             Institute Name</label>
                         <input type="text" id="first_name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g. European University Viadrina in Frankfurt (ODER)" required>
                     </div>
 
                     <div class="name p-6">
@@ -667,7 +683,7 @@
                             Title:</label>
                         <input type="text" id="first_name"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g. Certificate in International Human Rights and Humanitarian Law" required>
                     </div>
                 </section>
             </div>
@@ -711,21 +727,21 @@
                         <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Case Title</label>
                         <input type="text" id="Case"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g.European University Viadrina in Frankfurt (ODER)" required>
                     </div>
 
                     <div class="name p-6">
                         <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Court</label>
                         <input type="text" id="court"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g. Lahore High Court" required>
                     </div>
 
                     <div class="name p-6">
                         <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Law Area</label>
                         <input type="text" id="area"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g. Family Law" required>
                     </div>
 
                     <div class="name p-6">
@@ -734,7 +750,7 @@
                             Number</label>
                         <input type="text" id="certification"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                            placeholder="e.g. Mr" required>
+                            placeholder="e.g. PLD 1970 AJK 88" required>
                     </div>
 
                     <div class="summary px-6">
@@ -753,6 +769,131 @@
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Save</button>
             </div>
 
+        </form>
+    </dialog>
+
+    <!-- Delete Dialogs -->
+
+    <!-- Del-Clients -->
+    <dialog id="delclientmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow-lg">
+        <form method="dialog">
+            <!-- Modal header -->
+            <div class="sticky top-0 flex items-start justify-between p-4 bg-white border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Are you sure you want to delete?
+                </h3>
+                <button onclick="delclientmodal.close()" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col gap-3 p-3 md:p-6 md:gap-10">           
+                <div class="flex flex-col justify-center items-center p-5 gap-2 w-full">
+                    <span>
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 14V21M21 28H21.0175M36.75 21C36.75 23.0683 36.3426 25.1164 35.5511 27.0273C34.7596 28.9381 33.5995 30.6744 32.1369 32.1369C30.6744 33.5995 28.9381 34.7596 27.0273 35.5511C25.1164 36.3426 23.0683 36.75 21 36.75C18.9317 36.75 16.8836 36.3426 14.9727 35.5511C13.0619 34.7596 11.3256 33.5995 9.86307 32.1369C8.40055 30.6744 7.24041 28.9381 6.4489 27.0273C5.65739 25.1164 5.25 23.0683 5.25 21C5.25 16.8228 6.90937 12.8168 9.86307 9.86307C12.8168 6.90937 16.8228 5.25 21 5.25C25.1772 5.25 29.1832 6.90937 32.1369 9.86307C35.0906 12.8168 36.75 16.8228 36.75 21Z"
+                                stroke="#9CA3AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                        <span class="textbase text-gray-500">Notable clients</span>
+                        <span class="textbase font-medium">JS Bank</span>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="sticky bottom-0 flex items-center justify-end p-4 bg-white border-t border-gray-200 rounded-b gap-x-2">
+                <div class="flex justify-center items-center py-4 gap-4 w-full">
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 bg-red-700 hover:bg-red-800 text-white rounded-lg">
+                        Yes, I’m sure
+                    </button>
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 hover:bg-gray-50 border border-gray-200 rounded-lg">
+                        No, cancel            
+                    </button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Del-Certification -->
+    <dialog id="delcertificationmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow-lg">
+        <form method="dialog">
+            <!-- Modal header -->
+            <div class="sticky top-0 flex items-start justify-between p-4 bg-white border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Are you sure you want to delete?
+                </h3>
+                <button onclick="delcertificationmodal.close()" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col gap-3 p-3 md:p-6 md:gap-10">           
+                <div class="flex flex-col justify-center items-center p-5 gap-2 w-full">
+                    <span>
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 14V21M21 28H21.0175M36.75 21C36.75 23.0683 36.3426 25.1164 35.5511 27.0273C34.7596 28.9381 33.5995 30.6744 32.1369 32.1369C30.6744 33.5995 28.9381 34.7596 27.0273 35.5511C25.1164 36.3426 23.0683 36.75 21 36.75C18.9317 36.75 16.8836 36.3426 14.9727 35.5511C13.0619 34.7596 11.3256 33.5995 9.86307 32.1369C8.40055 30.6744 7.24041 28.9381 6.4489 27.0273C5.65739 25.1164 5.25 23.0683 5.25 21C5.25 16.8228 6.90937 12.8168 9.86307 9.86307C12.8168 6.90937 16.8228 5.25 21 5.25C25.1772 5.25 29.1832 6.90937 32.1369 9.86307C35.0906 12.8168 36.75 16.8228 36.75 21Z"
+                                stroke="#9CA3AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                        <span class="textbase text-gray-500">Certifications & Awards</span>
+                        <span class="textbase font-medium">European University Viadrina in Frankfurt (ODER)</span>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="sticky bottom-0 flex items-center justify-end p-4 bg-white border-t border-gray-200 rounded-b gap-x-2">
+                <div class="flex justify-center items-center py-4 gap-4 w-full">
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 bg-red-700 hover:bg-red-800 text-white rounded-lg">
+                        Yes, I’m sure
+                    </button>
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 hover:bg-gray-50 border border-gray-200 rounded-lg">
+                        No, cancel            
+                    </button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Del-Reported Cases -->
+    <dialog id="delreportedcasesmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow-lg">
+        <form method="dialog">
+            <!-- Modal header -->
+            <div class="sticky top-0 flex items-start justify-between p-4 bg-white border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Are you sure you want to delete?
+                </h3>
+                <button onclick="delreportedcasesmodal.close()" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col gap-3 p-3 md:p-6 md:gap-10">           
+                <div class="flex flex-col justify-center items-center p-5 gap-2 w-full">
+                    <span>
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 14V21M21 28H21.0175M36.75 21C36.75 23.0683 36.3426 25.1164 35.5511 27.0273C34.7596 28.9381 33.5995 30.6744 32.1369 32.1369C30.6744 33.5995 28.9381 34.7596 27.0273 35.5511C25.1164 36.3426 23.0683 36.75 21 36.75C18.9317 36.75 16.8836 36.3426 14.9727 35.5511C13.0619 34.7596 11.3256 33.5995 9.86307 32.1369C8.40055 30.6744 7.24041 28.9381 6.4489 27.0273C5.65739 25.1164 5.25 23.0683 5.25 21C5.25 16.8228 6.90937 12.8168 9.86307 9.86307C12.8168 6.90937 16.8228 5.25 21 5.25C25.1772 5.25 29.1832 6.90937 32.1369 9.86307C35.0906 12.8168 36.75 16.8228 36.75 21Z"
+                                stroke="#9CA3AF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                        <span class="textbase text-gray-500">Reported Case</span>
+                        <span class="textbase font-medium">Imran vs State</span>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="sticky bottom-0 flex items-center justify-end p-4 bg-white border-t border-gray-200 rounded-b gap-x-2">
+                <div class="flex justify-center items-center py-4 gap-4 w-full">
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 bg-red-700 hover:bg-red-800 text-white rounded-lg">
+                        Yes, I’m sure
+                    </button>
+                    <button class="flex justify-center items-center px-3 py-2 gap-2 hover:bg-gray-50 border border-gray-200 rounded-lg">
+                        No, cancel            
+                    </button>
+                </div>
+            </div>
         </form>
     </dialog>
 </body>
