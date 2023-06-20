@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create hearing</title>
+
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+
+<body>
+    <div class="flex justify-center items-center py-10">
+        <section class="w-2/5 bg-white rounded-xl shadow-md">
+            <!-- header -->
+            <div class="header py-6 px-4 flex justify-between items-center pb-5">
+                <span class="text-lg font-semibold text-gray-900">Add Certification</span>
+                <span>
+                    <a href="javascript:;">
+                        <span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.29279 4.79302C4.48031 4.60555 4.73462 4.50023 4.99979 4.50023C5.26495 4.50023 5.51926 4.60555 5.70679 4.79302L9.99979 9.08602L14.2928 4.79302C14.385 4.69751 14.4954 4.62133 14.6174 4.56892C14.7394 4.51651 14.8706 4.48892 15.0034 4.48777C15.1362 4.48662 15.2678 4.51192 15.3907 4.5622C15.5136 4.61248 15.6253 4.68673 15.7192 4.78062C15.8131 4.87452 15.8873 4.98617 15.9376 5.10907C15.9879 5.23196 16.0132 5.36364 16.012 5.49642C16.0109 5.6292 15.9833 5.76042 15.9309 5.88242C15.8785 6.00443 15.8023 6.11477 15.7068 6.20702L11.4138 10.5L15.7068 14.793C15.8889 14.9816 15.9897 15.2342 15.9875 15.4964C15.9852 15.7586 15.88 16.0094 15.6946 16.1948C15.5092 16.3802 15.2584 16.4854 14.9962 16.4877C14.734 16.49 14.4814 16.3892 14.2928 16.207L9.99979 11.914L5.70679 16.207C5.51818 16.3892 5.26558 16.49 5.00339 16.4877C4.74119 16.4854 4.49038 16.3802 4.30497 16.1948C4.11956 16.0094 4.01439 15.7586 4.01211 15.4964C4.00983 15.2342 4.11063 14.9816 4.29279 14.793L8.58579 10.5L4.29279 6.20702C4.10532 6.01949 4 5.76518 4 5.50002C4 5.23486 4.10532 4.98055 4.29279 4.79302V4.79302Z"
+                                    fill="#111928" />
+                            </svg>
+                        </span>
+                    </a>
+                </span>
+            </div>
+
+            <hr class="bg-black w-full">
+
+
+            <!-- Name field -->
+            <div class="name p-6">
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Case Title</label>
+                <input type="text" id="Case"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="e.g. Mr" required>
+            </div>
+
+            <div class="name p-6">
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Court</label>
+                <input type="text" id="court"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="e.g. Mr" required>
+            </div>
+
+            <div class="name p-6">
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Law Area</label>
+                <input type="text" id="area"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="e.g. Mr" required>
+            </div>
+
+            <div class="name p-6">
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Publication/Citation
+                    Number</label>
+                <input type="text" id="certification"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="e.g. Mr" required>
+            </div>
+
+            <div class="summary px-6">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Case Summary</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Write your text here..."></textarea>
+            </div>
+           <span class="text-xs text-gray-500 px-6">Max 4000 characters</span>
+
+            <hr class="bg-black w-full mt-3">
+
+
+            <div class="save flex justify-end p-6">
+                <a href="javascript:;">
+                    <div
+                        class="button w-16 h-8 flex justify-center items-center gap-2 bg-purple-700 hover:bg-purple-800 rounded-lg">
+                        <span class="text font-medium md:text-sm text-xs text-white">save</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

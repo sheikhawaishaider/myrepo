@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create hearing</title>
+
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+
+<body>
+    <div class="flex justify-center items-center py-10">
+        <section class="w-4/12 bg-white rounded-xl shadow-md">
+            <!-- header -->
+            <div class="header py-6 px-4 flex justify-between items-center pb-5">
+                <span class="text-lg font-semibold text-gray-900">Add Client</span>
+                <span>
+                    <a href="javascript:;">
+                    <span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29279 4.79302C4.48031 4.60555 4.73462 4.50023 4.99979 4.50023C5.26495 4.50023 5.51926 4.60555 5.70679 4.79302L9.99979 9.08602L14.2928 4.79302C14.385 4.69751 14.4954 4.62133 14.6174 4.56892C14.7394 4.51651 14.8706 4.48892 15.0034 4.48777C15.1362 4.48662 15.2678 4.51192 15.3907 4.5622C15.5136 4.61248 15.6253 4.68673 15.7192 4.78062C15.8131 4.87452 15.8873 4.98617 15.9376 5.10907C15.9879 5.23196 16.0132 5.36364 16.012 5.49642C16.0109 5.6292 15.9833 5.76042 15.9309 5.88242C15.8785 6.00443 15.8023 6.11477 15.7068 6.20702L11.4138 10.5L15.7068 14.793C15.8889 14.9816 15.9897 15.2342 15.9875 15.4964C15.9852 15.7586 15.88 16.0094 15.6946 16.1948C15.5092 16.3802 15.2584 16.4854 14.9962 16.4877C14.734 16.49 14.4814 16.3892 14.2928 16.207L9.99979 11.914L5.70679 16.207C5.51818 16.3892 5.26558 16.49 5.00339 16.4877C4.74119 16.4854 4.49038 16.3802 4.30497 16.1948C4.11956 16.0094 4.01439 15.7586 4.01211 15.4964C4.00983 15.2342 4.11063 14.9816 4.29279 14.793L8.58579 10.5L4.29279 6.20702C4.10532 6.01949 4 5.76518 4 5.50002C4 5.23486 4.10532 4.98055 4.29279 4.79302V4.79302Z" fill="#111928"/>
+                            </svg>                          
+                    </span>
+                </a>
+            </span>
+            </div>
+            
+            <hr class="bg-black w-full">
+            
+            <!-- image -->
+            <div class="img flex flex-col gap-5 items-center p-6">
+                <div class="w-36 h-36 flex justify-center items-center bg-gray-50 rounded-xl">
+
+                    <span>
+                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M69.4337 31.9421L68.6315 40.4654C67.3097 54.5096 66.6488 61.5316 62.5097 65.7658C58.3705 70 52.1669 70 39.7597 70H30.2403C17.8331 70 11.6295 70 7.49033 65.7658C3.35117 61.5316 2.69028 54.5096 1.36851 40.4654L0.566327 31.9421C-0.0636996 25.2479 -0.378713 21.9009 0.766449 20.5173C1.38593 19.7688 2.2283 19.3102 3.12895 19.2311C4.7939 19.0849 6.88478 21.4652 11.0665 26.2257C13.2292 28.6877 14.3105 29.9187 15.5168 30.1093C16.1852 30.215 16.8662 30.1064 17.4834 29.7958C18.5973 29.2352 19.3399 27.7134 20.8252 24.6698L28.6543 8.627C31.461 2.87567 32.8643 0 35 0C37.1357 0 38.539 2.87566 41.3457 8.62699L49.1747 24.6698C50.6601 27.7134 51.4027 29.2352 52.5166 29.7958C53.1338 30.1064 53.8148 30.215 54.4832 30.1093C55.6895 29.9187 56.7708 28.6877 58.9335 26.2257C63.1152 21.4652 65.2061 19.0849 66.871 19.2311C67.7717 19.3102 68.6141 19.7688 69.2335 20.5173C70.3787 21.9009 70.0637 25.2479 69.4337 31.9421ZM21.875 56C21.875 54.5503 23.0503 53.375 24.5 53.375H45.5C46.9497 53.375 48.125 54.5503 48.125 56C48.125 57.4497 46.9497 58.625 45.5 58.625H24.5C23.0503 58.625 21.875 57.4497 21.875 56Z"
+                                fill="#D1D5DB" />
+                        </svg>
+                    </span>
+                </div>
+                <span>
+                    <a href="javascript:;" class="font-medium text-sm">
+                        Client Logo
+                    </a>
+                </span>
+            </div>
+
+            <div class="buttons flex justify-center gap-2 p-6">
+                <a href="javascript:;">
+                    <div
+                        class="button w-20 h-8 flex justify-center items-center gap-2 bg-purple-700 hover:bg-purple-800 rounded-lg">
+                        <span class="icon">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.50016 0.833344C8.64613 0.833344 8.7848 0.897125 8.87979 1.00795L10.8798 3.34128C11.0595 3.55094 11.0352 3.86659 10.8256 4.04631C10.6159 4.22602 10.3002 4.20174 10.1205 3.99207L9.00016 2.68497L9.00016 10C9.00016 10.2762 8.77631 10.5 8.50016 10.5C8.22402 10.5 8.00016 10.2762 8.00016 10L8.00016 2.68497L6.87979 3.99207C6.70008 4.20174 6.38443 4.22602 6.17477 4.04631C5.96511 3.86659 5.94082 3.55094 6.12054 3.34128L8.12054 1.00795C8.21553 0.897125 8.3542 0.833344 8.50016 0.833344ZM5.16405 5.50132C5.44019 5.49978 5.66529 5.72239 5.66682 5.99853C5.66836 6.27467 5.44575 6.49977 5.16961 6.5013C4.44062 6.50536 3.92389 6.52429 3.53173 6.59633C3.15385 6.66574 2.93514 6.77719 2.77284 6.93949C2.58833 7.124 2.46803 7.38305 2.40226 7.87223C2.33456 8.3758 2.3335 9.04321 2.3335 10.0002V10.6668C2.3335 11.6238 2.33456 12.2912 2.40226 12.7947C2.46803 13.2839 2.58833 13.543 2.77284 13.7275C2.95734 13.912 3.21639 14.0323 3.70558 14.0981C4.20914 14.1658 4.87655 14.1668 5.8335 14.1668H11.1668C12.1238 14.1668 12.7912 14.1658 13.2948 14.0981C13.7839 14.0323 14.043 13.912 14.2275 13.7275C14.412 13.543 14.5323 13.2839 14.5981 12.7947C14.6658 12.2912 14.6668 11.6238 14.6668 10.6668V10.0002C14.6668 9.04321 14.6658 8.3758 14.5981 7.87223C14.5323 7.38305 14.412 7.124 14.2275 6.93949C14.0652 6.77719 13.8465 6.66574 13.4686 6.59633C13.0764 6.52429 12.5597 6.50536 11.8307 6.5013C11.5546 6.49977 11.332 6.27467 11.3335 5.99853C11.335 5.72239 11.5601 5.49978 11.8363 5.50132C12.5573 5.50533 13.1582 5.52259 13.6493 5.61278C14.1546 5.70561 14.5846 5.88243 14.9346 6.23239C15.3359 6.63366 15.5085 7.13891 15.5891 7.73899C15.6669 8.31697 15.6668 9.05185 15.6668 9.96357V10.7034C15.6668 11.6151 15.6669 12.35 15.5891 12.928C15.5085 13.5281 15.3359 14.0333 14.9346 14.4346C14.5333 14.8359 14.0281 15.0085 13.428 15.0891C12.85 15.1668 12.1151 15.1668 11.2034 15.1668H5.79692C4.88519 15.1668 4.15031 15.1668 3.57233 15.0891C2.97226 15.0085 2.46701 14.8359 2.06573 14.4346C1.66445 14.0333 1.49186 13.5281 1.41118 12.928C1.33347 12.35 1.33348 11.6151 1.3335 10.7034V9.96357C1.33348 9.05184 1.33347 8.31696 1.41118 7.73899C1.49186 7.13891 1.66445 6.63366 2.06573 6.23239C2.41568 5.88243 2.84573 5.70561 3.35106 5.61278C3.8421 5.52259 4.44303 5.50533 5.16405 5.50132Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span class="text font-medium md:text-sm text-xs text-white">Upload</span>
+                    </div>
+                </a>
+                <a href="javascript:;">
+                    <div
+                        class="button w-20 h-8 flex justify-center items-center gap-2 bg-red-700 hover:bg-red-800 rounded-lg">
+                        <span class="text font-medium md:text-sm text-xs text-white">Delete</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Name field -->
+            <div class="name p-6">
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">Client Name</label>
+                <input type="text" id="first_name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    placeholder="e.g. Mr" required>
+            </div>
+
+            <hr class="bg-black w-full mt-3">
+
+
+            <div class="save flex justify-end p-6">
+                <a href="javascript:;">
+                    <div
+                        class="button w-20 h-8 flex justify-center items-center gap-2 bg-purple-700 hover:bg-purple-800 rounded-lg">
+                        <span class="text font-medium md:text-sm text-xs text-white">Delete</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
