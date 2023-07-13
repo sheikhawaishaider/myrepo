@@ -3233,6 +3233,14 @@ select {
     height: auto;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:h-9 {
+    height: 2.25rem;
+  }
+
   .md\:w-10\/12 {
     width: 83.333333%;
   }
@@ -3264,6 +3272,14 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
   }
 
   .md\:max-w-2xl {
