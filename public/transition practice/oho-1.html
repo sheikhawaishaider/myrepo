@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=4, initial-scale=1.0">
+  <title>Side Bar Top</title>
+  <link href="/public/css/style.css" rel="stylesheet">
+
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+  <style>
+    /* Add custom styles here */
+    .slider-container {
+      position: fixed;
+      top: -100%;
+      /* Initially hidden below the viewport */
+      left: 0;
+      right: 0;
+      background-color: white;
+      transition: top 0.60s ease-in;
+    }
+
+    .slider-open {
+      top: 0;
+      /* Slide up to show */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col justify-center items-center">
+    <button id="open-button" class="bg-blue-500 text-white px-4 py-2 rounded">
+      Open Menu
+    </button>
+    <div id="slider" class="slider-container bg-gray-700 p-4">
+      <label id="close-button" class="text-gray-600 absolute top-2 right-2 cursor-pointer">&times;</label>
+      <!-- Content start -->
+      <div class="bg-violet-900 rounded-lg">
+        <div class="max-w-sm bg-gray-600 border border-gray-200 rounded-lg">
+          <a href="#">
+            <img class="rounded-t-lg h-60 w-full" src="/public/transition practice/ubud.jpg" alt="" />
+          </a>
+          <div class="p-2">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ubud is a town
+                on the Indonesian island of Bali </h5>
+            </a>
+            <p class="mb-3 text-sm text-gray-300">Things To Do in Ubud. Read Reviews and
+              Plan your Trip! Book Your Car Rental. Villas. Hotels. Great Availability. Airport Taxi
+              available. Motels. Flight + Hotel. Great Choice. Get Instant Confirmation. Special Offers.
+              Services: Stays, Flights, Car...</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-violet-900 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Read more
+              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Content end -->
+      <button id="close-button-slider" class="bg-violet-800 text-white px-4 py-1 rounded mt-1">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const openButton = document.getElementById("open-button");
+    const closeButton = document.getElementById("close-button");
+    const closeButtonSlider = document.getElementById("close-button-slider");
+    const slider = document.getElementById("slider");
+
+    openButton.addEventListener("click", () => {
+      slider.classList.add("slider-open");
+    });
+
+    closeButton.addEventListener("click", () => {
+      slider.classList.remove("slider-open");
+    });
+
+    closeButtonSlider.addEventListener("click", () => {
+      slider.classList.remove("slider-open");
+    });
+  </script>
+</body>
+
+</html>
