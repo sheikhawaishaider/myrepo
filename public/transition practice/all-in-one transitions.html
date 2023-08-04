@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Side Bar Animation</title>
+    <link href="/public/css/style.css" rel="stylesheet">
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+    <style>
+        /* Add custom styles here */
+        .slider-container {
+            position: fixed;
+            top: -100%;
+            /* Initially hidden below the viewport */
+            left: 0;
+            right: 0;
+            background-color: white;
+            transition: top 0.60s ease-in;
+        }
+
+        .slider-open {
+            top: 0;
+            /* Slide up to show */
+        }
+
+        .slider-bottom-container {
+            position: fixed;
+            bottom: -110%;
+            /* Initially hidden below the viewport */
+
+            background-color: white;
+            transition: bottom 1s ease-in;
+        }
+
+        .slider-bottom-open {
+            bottom: 0;
+            /* Slide up to show */
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        class="container flex flex-col gap-5 w-full h-1/2 bg-gradient-to-r from-neutral-700 via-gray-950 to-gray-700 p-32">
+        <!-- Top Button -->
+        <div class="button-Top flex justify-center items-center">
+            <a href="#">
+                <button id="open-button"
+                    class="button-1 w-28 h-10 rounded-xl bg-gradient-to-r from-neutral-700 via-gray-950 to-gray-700 flex justify-center items-center text-white font-semibold hover:border-black border-4 border-gray-500 hover:bg-gradient-to-bl focus:border-black">
+                    Slide Top</button>
+            </a>
+        </div>
+        <!-- Left Right Buttons -->
+        <div class="button-style flex justify-between px-20">
+            <!-- Left button -->
+            <a href="#">
+                <button
+                    class="button-left w-28 h-10 rounded-xl bg-gradient-to-r from-neutral-700 via-gray-950 to-gray-700 flex justify-center items-center text-white font-semibold hover:border-black border-4 border-gray-500 hover:bg-gradient-to-bl focus:border-black">
+                    Slide Left</button>
+            </a>
+            <!-- Right Button -->
+            <a href="#">
+                <button id="open-slider"
+                    class="button-left w-28 h-10 rounded-xl bg-gradient-to-r from-neutral-700 via-gray-950 to-gray-700 flex justify-center items-center text-white font-semibold hover:border-black border-4 border-gray-500 hover:bg-gradient-to-bl focus:border-black">
+                    Slide Right</button>
+            </a>
+        </div>
+        <!-- Bottom Button -->
+        <div class="button-style flex justify-center items-center pt-5">
+            <a href="#">
+                <button id="open-bottom-button"
+                    class="button-1 w-28 h-10 rounded-xl bg-gradient-to-r from-neutral-700 via-gray-950 to-gray-700 flex justify-center items-center text-white font-semibold hover:border-black border-4 border-gray-500 hover:bg-gradient-to-bl focus:border-black">
+                    Slide Bottom</button>
+            </a>
+        </div>
+
+
+
+        <!-- Portion-Top -->
+        <div class="min-h-screen flex flex-col justify-center items-center">
+            <div id="slider" class="slider-container bg-gray-700 p-4">
+                <label id="close-button" class="text-white absolute p5 top-2 right-0 cursor-pointer">&times;</label>
+                <!-- Content start -->
+                <div class="bg-violet-900 rounded-lg">
+                    <div class="max-w-sm bg-gray-600 border border-gray-200 rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg h-60 w-full" src="/public/transition practice/ubud.jpg" alt="" />
+                        </a>
+                        <div class="p-2">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ubud is
+                                    a town
+                                    on the Indonesian island of Bali </h5>
+                            </a>
+                            <p class="mb-3 text-sm text-gray-300">Things To Do in Ubud. Read Reviews and
+                                Plan your Trip! Book Your Car Rental. Villas. Hotels. Great Availability. Airport Taxi
+                                available. Motels. Flight + Hotel. Great Choice. Get Instant Confirmation. Special
+                                Offers.
+                                Services: Stays, Flights, Car...</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-violet-900 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content end -->
+                <button id="close-button-slider" class="bg-violet-800 text-white px-4 py-1 rounded mt-1">Close</button>
+            </div>
+        </div>
+
+        <!-- Bottom Portion -->
+        <div class="min-h-screen flex flex-col justify-center items-center bg-slate-300">
+            <div id="sliderbottom" class="slider-bottom-container bg-gray-700 p-4">
+                <label id="close-bottom-button"
+                    class="text-white absolute p5 top-2 right-0 cursor-pointer">&times;</label>
+                <!-- Content start -->
+                <div class="bg-violet-900 rounded-lg">
+                    <div class="max-w-sm bg-gray-600 border border-gray-200 rounded-lg">
+                        <a href="#">
+                            <img class="rounded-t-lg h-60 w-full" src="/public/transition practice/ubud.jpg" alt="" />
+                        </a>
+                        <div class="p-2">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ubud is
+                                    a town
+                                    on the Indonesian island of Bali </h5>
+                            </a>
+                            <p class="mb-3 text-sm text-gray-300">Things To Do in Ubud. Read Reviews and
+                                Plan your Trip! Book Your Car Rental. Villas. Hotels. Great Availability. Airport Taxi
+                                available. Motels. Flight + Hotel. Great Choice. Get Instant Confirmation. Special
+                                Offers.
+                                Services: Stays, Flights, Car...</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-violet-900 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content end -->
+                <button id="close-bottom-button-slider"
+                    class="bg-violet-800 text-white px-4 py-1 rounded mt-1">Close</button>
+            </div>
+        </div>
+
+        <!-- Right Portion -->
+        <div id="slider-menu" class="fixed top-0 h-full w-96 bg-gray-200 p-4">
+            <button id="close-slider" class="ml-auto text-gray-600 hover:text-gray-800">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+            <div class="py-4 ">
+                <div class="max-w-sm bg-gray-600 border border-gray-200 rounded-lg">
+                    <a href="#">
+                        <img class="rounded-t-lg h-60 w-full" src="/public/transition practice/ubud.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ubud is a town
+                                on the Indonesian island of Bali </h5>
+                        </a>
+                        <p class="mb-3 text-sm text-gray-300">Things To Do in Ubud. Read Reviews and
+                            Plan your Trip! Book Your Car Rental. Villas. Hotels. Great Availability. Airport Taxi
+                            available. Motels. Flight + Hotel. Great Choice. Get Instant Confirmation. Special Offers.
+                            Services: Stays, Flights, Car...</p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Read more
+                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+        <!-- Top Script -->
+        <script>
+            const openButton = document.getElementById("open-button");
+            const closeButton = document.getElementById("close-button");
+            const closeButtonSlider = document.getElementById("close-button-slider");
+            const slider = document.getElementById("slider");
+
+            openButton.addEventListener("click", () => {
+                slider.classList.add("slider-open");
+            });
+
+            closeButton.addEventListener("click", () => {
+                slider.classList.remove("slider-open");
+            });
+
+            closeButtonSlider.addEventListener("click", () => {
+                slider.classList.remove("slider-open");
+            });
+        </script>
+
+        <!-- Bottom Script -->
+        <script>
+            const openbottomButton = document.getElementById("open-bottom-button");
+            const closebottomButton = document.getElementById("close-bottom-button");
+            const closebottomButtonSlider = document.getElementById("close-bottom-button-slider");
+            const sliderbottom = document.getElementById("sliderbottom");
+
+            openbottomButton.addEventListener("click", () => {
+                sliderbottom.classList.add("slider-bottom-open");
+            });
+
+            closebottomButton.addEventListener("click", () => {
+                sliderbottom.classList.remove("slider-bottom-open");
+            });
+
+            closebottomButtonSlider.addEventListener("click", () => {
+                sliderbottom.classList.remove("slider-bottom-open");
+            });
+        </script>
+
+        <!-- Right Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    </div>
+</body>
+
+</html>
