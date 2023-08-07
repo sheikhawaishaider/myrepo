@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+    .slider-container {
+      position: fixed;
+      top: 0;
+      right: -300px; /* Initially hidden on the right side */
+      width: 300px;
+      height: 100%;
+      background-color: white;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Shadow on the left side */
+      transition: right 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+    }
+
+    .slider-open {
+      right: 0; /* Slide in from the right side */
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow when open */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col justify-center items-center">
+    <button id="menu-toggle" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Open Menu
+    </button>
+    <div id="slider" class="slider-container bg-gray-300 p-4">
+      <button id="close-btn" class="text-gray-600 absolute top-2 right-2 cursor-pointer hover:text-red-600">&times;</button>
+      <div class="mb-4">
+        <!-- Tabs -->
+        <div class="flex justify-between items-center bg-white p-2 rounded-full shadow">
+          <div class="w-1/2 text-center cursor-pointer tab active">Tab 1</div>
+          <div class="w-1/2 text-center cursor-pointer tab">Tab 2</div>
+        </div>
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <div class="tab-pane">
+            Content for Tab 1
+          </div>
+          <div class="tab-pane hidden">
+            Content for Tab 2
+          </div>
+        </div>
+      </div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const slider = document.getElementById('slider');
+    const closeBtn = document.getElementById('close-btn');
+    const tabs = document.querySelectorAll('.tab');
+    const tabContent = document.querySelectorAll('.tab-pane');
+
+    menuToggle.addEventListener('click', () => {
+      slider.classList.add('slider-open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      slider.classList.remove('slider-open');
+    });
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+        tabContent.forEach((content) => content.classList.add('hidden'));
+        tabContent[index].classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
