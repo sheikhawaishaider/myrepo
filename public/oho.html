@@ -29,14 +29,15 @@
       width: 500px;
       height: 100%;
        /* Semi-transparent white background */
-      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-      transition: right 0.75s ease-out, opacity 8s ease-in-out;
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0);
+      transition: right 0.3s ease-out, opacity 8s ease-out;
     }
 
     #slider-menu.open {
       right: 0;
       /* Slide into view when open */
-      opacity: 1;
+      opacity: 1s;
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
     }
   </style>
   </head>
@@ -55,8 +56,8 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      <div class="py-4 ">
-        <div class="max-w-sm bg-gray-600 border border-gray-200 rounded-lg">
+      <div class="">
+        <div class="max-w-sm bg-gray-700 border border-gray-200 rounded-lg">
           <a href="#">
             <img class="rounded-t-lg h-60 w-full" src="/public/transition practice/ubud.jpg" alt="" />
           </a>
