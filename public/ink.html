@@ -2,77 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=4, initial-scale=1.0">
+  <title>Side Bar Animation</title>
+  <link href="./css/style.css" rel="stylesheet">
+
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
   <style>
-    /* Add custom styles here */
-    .slider-container {
+    .slider {
       position: fixed;
       top: 0;
-      right: -300px; /* Initially hidden on the right side */
+      right: -100%;
       width: 300px;
       height: 100%;
       background-color: white;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1); /* Shadow on the left side */
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
       transition: right 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
     }
 
     .slider-open {
-      right: 0; /* Slide in from the right side */
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow when open */
+      right: 0;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .tab-button {
+      padding: 1rem;
+      cursor: pointer;
+      transition: box-shadow 0.3s;
+    }
+
+    .tab-button.active {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .tab-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      transition: transform 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+    }
+
+    .tab-pane {
+      flex: 1;
+      padding: 1rem;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+    }
+
+    .tab-content.active {
+      opacity: 1;
+      box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body class="bg-gray-100">
   <div class="min-h-screen flex flex-col justify-center items-center">
-    <button id="menu-toggle" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-      Open Menu
-    </button>
-    <div id="slider" class="slider-container bg-gray-300 p-4">
-      <button id="close-btn" class="text-gray-600 absolute top-2 right-2 cursor-pointer hover:text-red-600">&times;</button>
-      <div class="mb-4">
-        <!-- Tabs -->
-        <div class="flex justify-between items-center bg-white p-2 rounded-full shadow">
-          <div class="w-1/2 text-center cursor-pointer tab active">Tab 1</div>
-          <div class="w-1/2 text-center cursor-pointer tab">Tab 2</div>
+    <div id="slider" class="slider">
+      <div class="tab-buttons">
+        <div id="tab1" class="tab-button active">Tab 1</div>
+        <div id="tab2" class="tab-button">Tab 2</div>
+        <div id="tab3" class="tab-button">Tab 3</div>
+      </div>
+      <div class="tab-content">
+        <div id="content1" class="tab-pane active">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 1</button>
         </div>
-        <!-- Tab Content -->
-        <div class="tab-content">
-          <div class="tab-pane">
-            Content for Tab 1
-          </div>
-          <div class="tab-pane hidden">
-            Content for Tab 2
-          </div>
+        <div id="content2" class="tab-pane">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 2</button>
+        </div>
+        <div id="content3" class="tab-pane">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 3</button>
         </div>
       </div>
-      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Close</button>
     </div>
   </div>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
     const slider = document.getElementById('slider');
-    const closeBtn = document.getElementById('close-btn');
-    const tabs = document.querySelectorAll('.tab');
-    const tabContent = document.querySelectorAll('.tab-pane');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content .tab-pane');
 
-    menuToggle.addEventListener('click', () => {
-      slider.classList.add('slider-open');
-    });
+    tabButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
 
-    closeBtn.addEventListener('click', () => {
-      slider.classList.remove('slider-open');
-    });
-
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => {
-        tabs.forEach((t) => t.classList.remove('active'));
-        tab.classList.add('active');
-        tabContent.forEach((content) => content.classList.add('hidden'));
-        tabContent[index].classList.remove('hidden');
+        button.classList.add('active');
+        tabContents[index].classList.add('active');
       });
     });
   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 </html>
