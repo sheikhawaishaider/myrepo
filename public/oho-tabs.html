@@ -21,7 +21,7 @@
       position: fixed;
       left: 0;
       right: 0; /* Initially hidden on the right side */
-      top: -200%;
+      
       width: 100%;
       height: 100%;
       background-color: white;
@@ -54,9 +54,7 @@
 </head>
 <body class="bg-gray-100">
   <div class="min-h-screen flex flex-col justify-center items-center">
-    <button id="menu-toggle" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-      Open Menu
-    </button>
+    
     <div id="slider" class="slider-container bg-gray-300">
       <button id="close-btn" class="text-gray-600 absolute top-2 right-2 cursor-pointer hover:text-red-600">&times;</button>
       <div class="mb-4">
@@ -160,20 +158,12 @@
   </div>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const slider = document.getElementById('slider');
-    const closeBtn = document.getElementById('close-btn');
+   
+ 
     const tabs = document.querySelectorAll('.tab');
     const tabContent = document.querySelector('.tab-content .tab-pane');
 
-    menuToggle.addEventListener('click', () => {
-      slider.classList.add('slider-open');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      slider.classList.remove('slider-open');
-    });
-
+   
     tabs.forEach((tab, index) => {
       tab.addEventListener('click', () => {
         tabs.forEach((t) => t.classList.remove('active'));

@@ -1996,10 +1996,6 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -3388,34 +3384,12 @@ select {
   content: var(--tw-content);
 }
 
-.target\:bg-slate-400:target {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.focus-within\:bg-slate-400:focus-within {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .hover\:h-40:hover {
   height: 10rem;
 }
 
 .hover\:w-40:hover {
   width: 10rem;
-}
-
-@keyframes ping {
-
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.hover\:animate-ping:hover {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .hover\:rounded-full:hover {
@@ -3608,18 +3582,6 @@ select {
   text-decoration-line: underline;
 }
 
-@keyframes ping {
-
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.focus\:animate-ping:focus {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 .focus\:\!border-violet-500:focus {
   --tw-border-opacity: 1 !important;
   border-color: rgb(139 92 246 / var(--tw-border-opacity)) !important;
@@ -3653,11 +3615,6 @@ select {
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-slate-400:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .focus\:text-purple-800:focus {
@@ -3787,11 +3744,6 @@ select {
 
 .active\:animate-ping:active {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-.active\:bg-violet-700:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(109 40 217 / var(--tw-bg-opacity));
 }
 
 .active\:shadow-lg:active {
