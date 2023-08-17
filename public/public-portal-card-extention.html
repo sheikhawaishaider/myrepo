@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Lawyers</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+</head>
+
+<body>
+
+    <div
+        class="flex flex-col justify-between w-full gap-3 p-3 bg-white md:flex-row md:p-5 md:drop-shadow md:rounded-t-xl animate-pulse">
+        <div class="flex items-center gap-5">
+            <div class=""><!--!-->
+                <div
+                    class="w-20 h-20 md:w-36 md:h-36 text-3xl md:text-5xl bg-gray-400  rounded-md relative flex items-center justify-center shrink-0">
+                    <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="6" r="4" fill="#ffff" />
+                        <ellipse cx="12" cy="17" rx="7" ry="4" fill="#ffff" />
+                    </svg>
+                </div>
+            </div><!--!-->
+            <div class="flex flex-col gap-2 md:gap-5">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center w-full space-x-2 max-w-[360px]">
+                            <div class="h-2 bg-gray-300 rounded-full w-6"></div>
+                            <div class="h-2 bg-gray-200 rounded-full w-12"></div>
+                            <div class="h-2 bg-gray-300 rounded-full w-16"></div>
+                        </div>
+                    </div><!--!-->
+                    <div class="h-2 bg-gray-300 rounded-full w-16"></div>
+                </div><!--!-->
+                <div class="flex items-center gap-1"><!--!--><a href="javascript:;" x-on:click="liked = !liked"
+                        class="w-8 h-8 md:w-9 md:h-9 flex items-center justify-center rounded-full bg-gray-100 text-gray-900 hover:bg-gray-200"
+                        :class="liked? ' bg-green-600 text-white hover:bg-green-700':' bg-gray-100 text-gray-900 hover:bg-gray-200'"
+                        x-data="{liked:false}"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentcolor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.29214 1.85244C8.19543 1.82137 8.08968 1.8289 7.99985 1.87219C7.9015 1.91958 7.8365 2.0023 7.81316 2.0923L7.49602 3.31487C7.38511 3.74242 7.22363 4.15481 7.01566 4.54415C6.69277 5.14861 6.20422 5.6135 5.75098 6.00406L4.79182 6.83059C4.64317 6.95869 4.56493 7.15071 4.58188 7.34669L5.12332 13.6085C5.15068 13.9248 5.41496 14.1668 5.7309 14.1668H8.82998C10.9209 14.1668 12.6825 12.712 13.0204 10.7583L13.4908 8.03842C13.5555 7.6641 13.2676 7.32296 12.8899 7.32296H9.43579C8.78438 7.32296 8.28959 6.73854 8.39476 6.09664L8.83655 3.40027C8.89706 3.03092 8.87978 2.65298 8.78581 2.29072C8.73812 2.10689 8.59306 1.94911 8.38878 1.88348L8.29214 1.85244L8.44506 1.3764L8.29214 1.85244ZM7.56575 0.971326C7.88748 0.816294 8.25817 0.791192 8.59799 0.900359L8.69464 0.931406L8.54171 1.40745L8.69464 0.931406C9.21264 1.09781 9.6168 1.51162 9.75377 2.03963C9.8827 2.53667 9.90641 3.0552 9.82339 3.56195L9.38161 6.25833C9.37595 6.29283 9.40254 6.32296 9.43579 6.32296H12.8899C13.8894 6.32296 14.6463 7.2245 14.4761 8.20883L14.0058 10.9287C13.5805 13.3875 11.3808 15.1668 8.82998 15.1668H5.7309C4.89513 15.1668 4.19901 14.527 4.12704 13.6946L3.5856 7.43284C3.541 6.91702 3.74681 6.41103 4.13903 6.07305L5.09819 5.24652C5.535 4.87011 5.90269 4.50528 6.13361 4.07299C6.30466 3.75278 6.43715 3.41421 6.52805 3.06378L6.84519 1.84121C6.94468 1.45767 7.21109 1.14222 7.56575 0.971326ZM1.97844 6.32343C2.24595 6.31188 2.47507 6.51313 2.49814 6.77989L3.14587 14.2709C3.18748 14.7521 2.80846 15.1668 2.32447 15.1668C1.86859 15.1668 1.5 14.797 1.5 14.342V6.82296C1.5 6.5552 1.71093 6.33497 1.97844 6.32343Z">
+                            </path>
+                        </svg></a></div>
+            </div>
+        </div><!--!-->
+
+        <div class="flex flex-col items-end gap-8">
+            <div class="grid w-full grid-cols-2 gap-1 lg:flex lg:flex-row">
+                <div
+                    class="flex flex-row items-center w-full gap-2 py-2.5 px-3 rounded-lg md:flex-col lg:w-28 bg-gray-50 justify-center">
+                    <div class="h-7 bg-gray-300 rounded-lg w-8"></div><!--!-->
+                    <!--!-->
+                    <div class="h-2 bg-gray-300 rounded-full w-16"></div>
+                </div><!--!-->
+                <div
+                    class="flex flex-row items-center w-full gap-2 py-2.5 px-3 rounded-lg md:flex-col lg:w-28 bg-gray-50 justify-center">
+                    <div class="h-7 bg-gray-300 rounded-lg w-8"></div>
+                    <!--!-->
+                    <!--!-->
+                    <div class="h-2 bg-gray-300 rounded-full w-16"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

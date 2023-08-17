@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Lawyers</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+</head>
+
+<body>
+    <div class="flex flex-col max-w-3xl gap-5 py-4 mx-auto md:py-8 animate-pulse">
+        <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2 p-4"><!--!--><span
+                    class="flex items-center justify-center bg-gray-300 rounded-full box w-7 h-7">
+                    <svg width="15"
+                        height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.74015 1.21422V2.14279H2.33199C1.55457 2.14279 0.923828 2.76667 0.923828 3.53564V4.9285H14.0667V3.53564C14.0667 2.76667 13.4359 2.14279 12.6585 2.14279H11.2504V1.21422C11.2504 0.7006 10.8308 0.285645 10.3116 0.285645C9.79232 0.285645 9.37281 0.7006 9.37281 1.21422V2.14279H5.61771V1.21422C5.61771 0.7006 5.19819 0.285645 4.67893 0.285645C4.15967 0.285645 3.74015 0.7006 3.74015 1.21422ZM14.0667 5.85707H0.923828V13.7499C0.923828 14.5189 1.55457 15.1428 2.33199 15.1428H12.6585C13.4359 15.1428 14.0667 14.5189 14.0667 13.7499V5.85707Z"
+                            fill="black"></path>
+                    </svg>
+                </span>
+                <div class="flex items-center w-full space-x-2 max-w-[360px]">
+                    <div class="h-2 bg-gray-300 rounded-full w-6"></div>
+                    <div class="h-2 bg-gray-200 rounded-full w-12"></div>
+                    <div class="h-2 bg-gray-300 rounded-full w-16"></div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-1 px-1"><a
+                    class="cursor-pointer shrink-0 w-6 h-20 bg-gray-50 md:bg-transparent hover:bg-gray-100 rounded-md flex items-center justify-center z-20"><!--!-->
+                    <svg
+                        width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 15L1.5 8L8.5 1" stroke="#111928" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </a><!--!-->
+                <ul class="flex gap-1 p-1 grow overflow-x-auto flex-nowrap" id="appointment-date-tab"
+                    data-tabs-toggle="#appointment-date" role="tablist">
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Mon-tab"
+                            data-tabs-target="#Mon" type="button" role="tab" aria-controls="Mon" aria-selected="false"
+                            fdprocessedid="4lue5t">
+                            <div class="item-Mon"><input type="radio" id="opt-19" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-19"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Tue-tab"
+                            data-tabs-target="#Tue" type="button" role="tab" aria-controls="Tue" aria-selected="false"
+                            fdprocessedid="7cer9k">
+                            <div class="item-Tue"><input type="radio" id="opt-20" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-20"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Wed-tab"
+                            data-tabs-target="#Wed" type="button" role="tab" aria-controls="Wed" aria-selected="false"
+                            fdprocessedid="lyvk7n">
+                            <div class="item-Wed"><input type="radio" id="opt-21" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-21"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Thu-tab"
+                            data-tabs-target="#Thu" type="button" role="tab" aria-controls="Thu" aria-selected="false"
+                            fdprocessedid="ul9pno">
+                            <div class="item-Thu"><input type="radio" id="opt-22" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-22"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Fri-tab"
+                            data-tabs-target="#Fri" type="button" role="tab" aria-controls="Fri" aria-selected="false"
+                            fdprocessedid="cb0env">
+                            <div class="item-Fri"><input type="radio" id="opt-23" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-23"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Sat-tab"
+                            data-tabs-target="#Sat" type="button" role="tab" aria-controls="Sat" aria-selected="false"
+                            fdprocessedid="uclrtb">
+                            <div class="item-Sat"><input type="radio" id="opt-24" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-24"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                    <li class="flex grow-0 shrink-0 basic-auto" role="presentation"><button id="Sun-tab"
+                            data-tabs-target="#Sun" type="button" role="tab" aria-controls="Sun" aria-selected="false"
+                            fdprocessedid="ef25c">
+                            <div class="item-Sun"><input type="radio" id="opt-25" value="" class="hidden peer"
+                                    required="" name="appointment"><!--!-->
+                                <label for="opt-25"
+                                    class="flex flex-col items-center justify-center w-24 h-20 px-5 py-3 mb-1 gap-1 text-gray-600 bg-gray-100 rounded-lg cursor-pointer time_date hover:bg-violet-700 peer-hover:text-white peer-checked:bg-violet-700 peer-checked:text-white peer-checked:group:text-white">
+                                    <div class="h-2 bg-gray-300 rounded-full w-12"></div><!--!-->
+                                    <div class="h-2 bg-gray-300 rounded-full w-16"></div><!--!-->
+                                    <span class="flex w-2 h-2 bg-red-500  rounded"></span>
+                                </label>
+                            </div>
+                        </button></li>
+                </ul><!--!-->
+                <a
+                    class="cursor-pointer shrink-0 w-6 h-20 bg-gray-50 md:bg-transparent hover:bg-gray-100 rounded-md flex items-center justify-center z-20"><!--!--><svg
+                        width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L8.5 8L1.5 15" stroke="#111928" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

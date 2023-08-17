@@ -15,98 +15,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
-  <style>
-    .slider {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 300px;
-      height: 100%;
-      background-color: white;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
-      transition: right 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
-    }
-
-    .slider-open {
-      right: 0;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .tab-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .tab-button {
-      padding: 1rem;
-      cursor: pointer;
-      transition: box-shadow 0.3s;
-    }
-
-    .tab-button.active {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .tab-content {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-      transition: transform 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
-    }
-
-    .tab-pane {
-      flex: 1;
-      padding: 1rem;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
-      transition: opacity 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
-    }
-
-    .tab-content.active {
-      opacity: 1;
-      box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
-    }
-  </style>
+    <style>
+        .page-transition {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
-  <div class="min-h-screen flex flex-col justify-center items-center">
-    <div id="slider" class="slider">
-      <div class="tab-buttons">
-        <div id="tab1" class="tab-button active">Tab 1</div>
-        <div id="tab2" class="tab-button">Tab 2</div>
-        <div id="tab3" class="tab-button">Tab 3</div>
-      </div>
-      <div class="tab-content">
-        <div id="content1" class="tab-pane active">
-          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 1</button>
+
+    <div class="page-transition" id="page1">
+        <div class="bg-white p-8 rounded shadow">
+            <h1 class="text-2xl font-semibold mb-4 text-black">Page 1</h1>
+            <button onclick="navigateToPage('page2')" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Go to Page 2</button>
         </div>
-        <div id="content2" class="tab-pane">
-          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 2</button>
-        </div>
-        <div id="content3" class="tab-pane">
-          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button 3</button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script>
-    const slider = document.getElementById('slider');
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content .tab-pane');
+    <div class="page-transition hidden" id="page2">
+        <div class="bg-white p-8 rounded shadow">
+            <h1 class="text-2xl font-semibold mb-4">Page 2</h1>
+            <button onclick="navigateToPage('page1')" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Go to Page 1</button>
+        </div>
+    </div>
 
-    tabButtons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabContents.forEach(content => content.classList.remove('active'));
+    <script>
+        function navigateToPage(pageId) {
+            const currentPage = document.querySelector('.page-transition:not(.hidden)');
+            const nextPage = document.getElementById(pageId);
 
-        button.classList.add('active');
-        tabContents[index].classList.add('active');
-      });
-    });
-  </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+            currentPage.style.opacity = 0;
+            setTimeout(() => {
+                currentPage.classList.add('hidden');
+                nextPage.classList.remove('hidden');
+                setTimeout(() => {
+                    nextPage.style.opacity = 1;
+                }, 10);
+            }, 500);
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 </html>
