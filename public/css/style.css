@@ -1400,6 +1400,16 @@ select {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@keyframes ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
 @keyframes pulse {
 
   50% {
@@ -1525,6 +1535,10 @@ select {
 .gap-8 {
   gap: 2rem;
 }
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
 .gap-x-16 {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -1533,18 +1547,14 @@ select {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
+.gap-y-4 {
+  row-gap: 1rem;
+}
 .gap-y-7 {
   row-gap: 1.75rem;
 }
 .gap-y-8 {
   row-gap: 2rem;
-}
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-.gap-y-4 {
-  row-gap: 1rem;
 }
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1622,9 +1632,6 @@ select {
 }
 .whitespace-nowrap {
   white-space: nowrap;
-}
-.break-words {
-  overflow-wrap: break-word;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -2023,10 +2030,6 @@ select {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-.bg-orange-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -3137,10 +3140,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
 }
-.text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -3394,14 +3393,14 @@ select {
   border-radius: 9999px;
 }
 
-.after\:border-4::after {
-  content: var(--tw-content);
-  border-width: 4px;
-}
-
 .after\:border::after {
   content: var(--tw-content);
   border-width: 1px;
+}
+
+.after\:border-4::after {
+  content: var(--tw-content);
+  border-width: 4px;
 }
 
 .after\:border-b::after {
@@ -3415,16 +3414,16 @@ select {
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.after\:border-violet-300::after {
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-color: rgb(196 181 253 / var(--tw-border-opacity));
-}
-
 .after\:border-gray-300::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.after\:border-violet-300::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(196 181 253 / var(--tw-border-opacity));
 }
 
 .after\:bg-violet-600::after {
@@ -3653,11 +3652,6 @@ select {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-purple-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -4381,12 +4375,24 @@ select {
     height: 3rem;
   }
 
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:h-20 {
     height: 5rem;
   }
 
   .md\:h-36 {
     height: 9rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
   }
 
   .md\:h-8 {
@@ -4425,16 +4431,12 @@ select {
     height: 100%;
   }
 
-  .md\:h-16 {
-    height: 4rem;
-  }
-
-  .md\:h-6 {
-    height: 1.5rem;
-  }
-
   .md\:max-h-\[529px\] {
     max-height: 529px;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
   }
 
   .md\:w-10\/12 {
@@ -4453,6 +4455,10 @@ select {
     width: 9rem;
   }
 
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:w-40 {
     width: 10rem;
   }
@@ -4463,6 +4469,10 @@ select {
 
   .md\:w-56 {
     width: 14rem;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
   }
 
   .md\:w-60 {
@@ -4496,14 +4506,6 @@ select {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
-  }
-
-  .md\:w-6 {
-    width: 1.5rem;
   }
 
   .md\:max-w-2xl {
@@ -4614,12 +4616,12 @@ select {
     gap: 1.75rem;
   }
 
-  .md\:gap-px {
-    gap: 1px;
-  }
-
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-px {
+    gap: 1px;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -4930,11 +4932,6 @@ select {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .md\:font-medium {
