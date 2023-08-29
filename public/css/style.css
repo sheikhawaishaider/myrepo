@@ -1163,6 +1163,9 @@ select {
 .h-screen {
   height: 100vh;
 }
+.h-1\/4 {
+  height: 25%;
+}
 .max-h-max {
   max-height: -moz-max-content;
   max-height: max-content;
@@ -4524,6 +4527,14 @@ select {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-\[calc\(100dvh-25rem\)\] {
+    height: calc(100dvh - 25rem);
+  }
+
+  .md\:h-\[calc\(100dvh-15rem\)\] {
+    height: calc(100dvh - 15rem);
   }
 
   .md\:max-h-\[529px\] {
